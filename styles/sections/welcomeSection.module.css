@@ -1,0 +1,24 @@
+.container {
+  background-color: var(--theme_darkgray);
+  width: 100%;
+  height: 800px;
+  display: flex;
+}
+
+.content {
+  margin: auto;
+  width: 1000px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 30px;
+  color: var(--theme_white);
+}
+
+.description {
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--theme_auxiliary_lightgray);
+}

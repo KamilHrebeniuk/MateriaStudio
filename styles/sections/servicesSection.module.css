@@ -1,0 +1,5 @@
+.container {
+  background-color: var(--theme_purple);
+  width: 100%;
+  height: 800px;
+}
