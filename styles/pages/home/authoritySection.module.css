@@ -1,0 +1,38 @@
+.container {
+  background-color: var(--theme_white);
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.descriptionContainer {
+  width: 750px;
+  height: fit-content;
+  margin: auto 0;
+}
+
+.title {
+  margin-bottom: 80px;
+  font-weight: 900;
+  font-size: var(--theme_font_header);
+  color: var(--theme_darkgray);
+}
+
+.description {
+  font-weight: 300;
+  font-size: var(--theme_font_description);
+  color: var(--theme_darkgray);
+}
+
+.image {
+  width: auto;
+  height: 740px;
+  margin-top: 40px;
+}

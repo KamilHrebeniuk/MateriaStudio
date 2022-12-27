@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "../styles/footer.module.css";
+import styles from "../../styles/footer.module.css";
 import Head from "next/head";
 // import Image from "next/image";
 

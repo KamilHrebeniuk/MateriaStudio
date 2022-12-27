@@ -7,18 +7,19 @@
 
 .content {
   margin: auto;
-  width: 1000px;
+  width: 1200px;
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: 900;
-  font-size: 30px;
+  font-size: var(--theme_font_megasuperplus);
+  text-transform: uppercase;
   color: var(--theme_white);
 }
 
 .description {
   font-weight: 300;
-  font-size: 18px;
+  font-size: var(--theme_font_description);
   color: var(--theme_auxiliary_lightgray);
 }

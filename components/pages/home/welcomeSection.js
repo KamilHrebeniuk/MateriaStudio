@@ -1,5 +1,5 @@
-import styles from "../styles/sections/welcomeSection.module.css";
-import useWindowSize from "../hooks/useWindowSize";
+import styles from "../../../styles/pages/home/welcomeSection.module.css";
+import useWindowSize from "../../../hooks/useWindowSize";
 
 export default function WelcomeSection() {
   const windowSize = useWindowSize();
