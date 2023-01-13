@@ -14,7 +14,7 @@
 .title {
   margin: 110px auto 140px auto;
   font-weight: 900;
-  font-size: var(--theme_font_header);
+  font-size: var(--theme_font_size_header);
   color: var(--theme_white);
 }
 
@@ -24,7 +24,7 @@
 }
 
 .service {
-  background-color: var(--theme_auxiliary_lightgray);
+  background-color: var(--theme_white);
   width: 585px;
   height: 800px;
   display: flex;
@@ -34,7 +34,7 @@
 .serviceTitle {
   margin: 50px auto 0 auto;
   font-weight: 900;
-  font-size: var(--theme_font_header);
+  font-size: var(--theme_font_size_header);
   color: var(--theme_darkgray);
 }
 
@@ -45,7 +45,7 @@
 }
 
 .serviceDescription {
-  font-size: var(--theme_font_description);
+  font-size: var(--theme_font_size_description);
 }
 
 li.serviceDescription:not(:last-child) {

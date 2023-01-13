@@ -1,10 +1,17 @@
 :root {
   --theme_purple: #271032;
-  --theme_darkgray: #1f1e2c;
-  --theme_white: #ffffff;
-  --theme_auxiliary_lightgray: #d9d9d9;
+  --theme_darkgray: #1a181b;
+  --theme_white: #fffffc;
+  --accent_primary: #801e60;
+  --accent_contrast: #a1e44d;
 
-  --theme_font_megasuperplus: 100px;
-  --theme_font_header: 46px;
-  --theme_font_description: 24px;
+  --theme_white_rgb: 255, 255, 252;
+
+  --theme_font_size_megasuperplus: 64px;
+  --theme_font_size_header: 48px;
+  --theme_font_size_description: 24px;
+  --theme_font_size_subpoint: 16px;
+
+  --theme_font_weight_bold: 700;
+  --theme_font_weight_normal: 400;
 }

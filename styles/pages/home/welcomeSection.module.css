@@ -13,13 +13,13 @@
 .title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: var(--theme_font_megasuperplus);
+  font-size: var(--theme_font_size_megasuperplus);
   text-transform: uppercase;
   color: var(--theme_white);
 }
 
 .description {
   font-weight: 300;
-  font-size: var(--theme_font_description);
-  color: var(--theme_auxiliary_lightgray);
+  font-size: var(--theme_font_size_description);
+  color: var(--theme_white);
 }
