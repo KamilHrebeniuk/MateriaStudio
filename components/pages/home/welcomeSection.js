@@ -1,6 +1,7 @@
 import { useIntl } from "react-intl";
 import styles from "../../../styles/pages/home/welcomeSection.module.css";
 import useWindowSize from "../../../hooks/useWindowSize";
+import __ from "/utils/lang/translate";
 
 export default function WelcomeSection() {
   const intl = useIntl();
@@ -12,7 +13,7 @@ export default function WelcomeSection() {
     <div className={styles.container} style={{ height: sectionHeight }}>
       <div className={styles.content}>
         <h1 className={styles.title}>
-          {intl.formatMessage({ id: "pages.home.welcomeSection.title" })}
+          {__("pages.home.welcomeSection.title")}
         </h1>
         <span
           className={styles.description}

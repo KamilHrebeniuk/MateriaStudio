@@ -1,0 +1,46 @@
+.container {
+  background-color: var(--theme_white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headersContainer {
+  width: 37%;
+  margin: 114px auto 57px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: solid 3px var(--accent_contrast);
+}
+
+.mainHeader {
+  font-size: var(--theme_font_size_header);
+  color: var(--theme_darkgray);
+  font-weight: var(--theme_font_weight_bold);
+  margin-bottom: 20px;
+}
+
+.secondaryHeader {
+  font-size: var(--theme_font_size_description);
+  color: var(--theme_darkgray);
+  width: 100%;
+}
+
+.graphicsContainer {
+  margin: 50px auto 65px;
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  margin: 0 auto;
+  font-size: var(--theme_font_size_description);
+}
+
+.buttonContainer {
+  margin: 40px auto 200px;
+}

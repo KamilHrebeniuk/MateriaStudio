@@ -13,7 +13,7 @@
 }
 
 .descriptionContainer {
-  width: 750px;
+  width: 680px;
   height: fit-content;
   margin: auto 0;
 }
@@ -21,6 +21,7 @@
 .title {
   margin-bottom: 80px;
   font-weight: 900;
+  line-height: 60px;
   font-size: var(--theme_font_size_header);
   color: var(--theme_darkgray);
 }
@@ -33,6 +34,10 @@
 
 .image {
   width: auto;
-  height: 740px;
+  height: 530px;
+  margin-top: 190px;
+}
+
+.startButton {
   margin-top: 40px;
 }

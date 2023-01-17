@@ -9,11 +9,9 @@ import Facebook_icon from "../../../public/pages/universal/footer/icons/Facebook
 import Linkedin_icon from "../../../public/pages/universal/footer/icons/Linkedin.png";
 import Twitter_icon from "../../../public/pages/universal/footer/icons/Twitter.png";
 import Link from "next/link";
-import { useIntl } from "react-intl";
+import __ from "/utils/lang/translate";
 
 export default function FooterSection() {
-  const intl = useIntl();
-
   return (
     <footer
       className={styles.container}
@@ -53,34 +51,24 @@ export default function FooterSection() {
         </div>
         <div className={styles.pagesContainer}>
           <h4 className={styles.sectionHeaders}>
-            {intl.formatMessage({
-              id: "pages.universal.footerSection.pagesTitle",
-            })}
+            {__("pages.universal.footerSection.pagesTitle")}
           </h4>
           <Link className={styles.sectionContent} href="/">
-            {intl.formatMessage({
-              id: "pages.universal.footerSection.homepage",
-            })}
+            {__("pages.universal.footerSection.homepage")}
           </Link>
           <Link className={styles.sectionContent} href="/">
-            {intl.formatMessage({
-              id: "pages.universal.footerSection.portfolio",
-            })}
+            {__("pages.universal.footerSection.portfolio")}
           </Link>
           <Link className={styles.sectionContent} href="/">
-            {intl.formatMessage({ id: "pages.universal.footerSection.offer" })}
+            {__("pages.universal.footerSection.offer")}
           </Link>
           <Link className={styles.sectionContent} href="/">
-            {intl.formatMessage({
-              id: "pages.universal.footerSection.contact",
-            })}
+            {__("pages.universal.footerSection.contact")}
           </Link>
         </div>
         <div className={styles.linksContainer}>
           <h4 className={styles.sectionHeaders}>
-            {intl.formatMessage({
-              id: "pages.universal.footerSection.socials",
-            })}
+            {__("pages.universal.footerSection.socials")}
           </h4>
           <div className={styles.sectionIconsContainer}>
             <Link className={styles.sectionIconContainer} href="/">
@@ -114,11 +102,7 @@ export default function FooterSection() {
           </div>
         </div>
         <div className={styles.copyright}>
-          <span>
-            {intl.formatMessage({
-              id: "pages.universal.footerSection.copyrights",
-            })}
-          </span>
+          <span>{__("pages.universal.footerSection.copyrights")}</span>
           <span>Copyright © 2022</span>
         </div>
       </div>
