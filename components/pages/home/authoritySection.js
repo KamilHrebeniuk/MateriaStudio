@@ -3,6 +3,7 @@ import Image from "next/image";
 import CEO_image from "../../../public/pages/home/CEO.png";
 import __ from "/utils/lang/translate";
 import Button from "../../elements/button";
+import url from "../../../utils/routing/url";
 
 export default function AuthoritySection() {
   return (
@@ -20,7 +21,7 @@ export default function AuthoritySection() {
               textId={"pages.home.authoritySection.startButton"}
               type={"white"}
               size={"small"}
-              url={"#"}
+              url={url.offerPage}
             />
           </div>
         </div>

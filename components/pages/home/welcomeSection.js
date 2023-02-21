@@ -2,6 +2,8 @@ import { useIntl } from "react-intl";
 import styles from "../../../styles/pages/home/welcomeSection.module.css";
 import useWindowSize from "../../../hooks/useWindowSize";
 import __ from "/utils/lang/translate";
+import Button from "../../elements/button";
+import url from "../../../utils/routing/url";
 
 export default function WelcomeSection() {
   const intl = useIntl();
@@ -23,7 +25,13 @@ export default function WelcomeSection() {
             }),
           }}
         />
-      </div>
+        <Button
+            textId={"pages.home.welcomeSection.startButton"}
+            type={"purpleAccent"}
+            size={"small"}
+            url={url.offerPage}
+        />
+        </div>
     </div>
   );
 }

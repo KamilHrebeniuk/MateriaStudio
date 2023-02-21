@@ -4,13 +4,15 @@
   text-transform: uppercase;
   cursor: pointer;
   display: block;
+  transition-duration: 0.5s;
 }
+
+/************ SMALL ************/
 
 .smallPurpleAccent {
   background-color: var(--accent_primary);
   color: var(--theme_white);
-  border-radius: 40px;
-  border: none;
+  border: solid 1px var(--accent_primary);;
   font-size: var(--theme_font_size_subpoint);
   width: 240px;
   line-height: 45px;
@@ -19,8 +21,8 @@
 .smallPurple {
   background-color: var(--theme_purple);
   color: var(--theme_white);
-  border-radius: 40px;
-  border: none;
+  border-radius: 20px;
+  border: solid 1px var(--theme_purple);;
   font-size: var(--theme_font_size_subpoint);
   width: 240px;
   line-height: 45px;
@@ -34,6 +36,8 @@
   width: 240px;
   line-height: 45px;
 }
+
+/************ BIG ************/
 
 .bigPurpleAccent {
   background-color: var(--accent_primary);
@@ -62,4 +66,50 @@
   font-size: var(--theme_font_size_description);
   width: 410px;
   line-height: 80px;
+}
+
+/************ SMALL HOVER ************/
+
+.smallPurpleAccent:hover {
+  border-radius: 20px;
+  background-color: var(--theme_white);
+  border: solid 1px var(--theme_purple);
+  color: var(--theme_purple);
+}
+
+.smallPurpleAccent:active {
+  border: solid 1px var(--theme_purple);
+  border-radius: 20px;
+  background-color: var(--theme_purple);
+  color: var(--theme_white);
+}
+
+.smallWhite:hover {
+  border: solid 1px var(--theme_purple);
+  border-radius: 20px;
+  background-color: var(--theme_purple);
+  color: var(--theme_white);
+}
+
+.smallWhite:active {
+  border: solid 1px var(--accent_primary);
+  border-radius: 20px;
+  background-color: var(--accent_primary);
+  color: var(--theme_white);
+}
+
+/************ BIG HOVER ************/
+
+.bigWhite:hover {
+  border: solid 1px var(--theme_purple);
+  border-radius: 40px;
+  background-color: var(--theme_purple);
+  color: var(--theme_white);
+}
+
+.bigWhite:active {
+  border: solid 1px var(--accent_primary);
+  border-radius: 40px;
+  background-color: var(--accent_primary);
+  color: var(--theme_white);
 }

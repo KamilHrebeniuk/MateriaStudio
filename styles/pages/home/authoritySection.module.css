@@ -20,7 +20,7 @@
 
 .title {
   margin-bottom: 80px;
-  font-weight: 900;
+  font-weight: var(--theme_font_weight_bold);
   line-height: 60px;
   font-size: var(--theme_font_size_header);
   color: var(--theme_darkgray);

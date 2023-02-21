@@ -15,11 +15,14 @@
   font-weight: 900;
   font-size: var(--theme_font_size_megasuperplus);
   text-transform: uppercase;
-  color: var(--theme_white);
+  color: transparent;
+  -webkit-text-stroke: 2px var(--theme_white);
 }
 
 .description {
   font-weight: 300;
   font-size: var(--theme_font_size_description);
   color: var(--theme_white);
+  display: block;
+  margin-bottom: 90px;
 }

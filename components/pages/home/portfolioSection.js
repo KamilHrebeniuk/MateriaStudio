@@ -6,6 +6,7 @@ import portfolio1 from "/public/pages/home/portfolio1.png";
 import portfolio2 from "/public/pages/home/portfolio2.png";
 import portfolio3 from "/public/pages/home/portfolio3.png";
 import Button from "../../elements/button";
+import url from "../../../utils/routing/url";
 
 export default function PortfolioSection() {
   return (
@@ -14,13 +15,13 @@ export default function PortfolioSection() {
         <h2 className={styles.mainHeader}>
           {__("pages.home.portfolioSection.portfolioHeader")}
         </h2>
-        <Link href={"#"} className={styles.secondaryHeader}>
+        <Link href={url.portfolioPage} className={styles.secondaryHeader}>
           {__("pages.home.portfolioSection.checkPortfolioButton")}
         </Link>
       </div>
       <div className={styles.purpleBlockContainer}>
         <div className={styles.purpleBlock} />
-        <Link href={"#"} className={styles.purpleBlockLink}>
+        <Link href={url.portfolioPage} className={styles.purpleBlockLink}>
           {__("pages.home.portfolioSection.purpleBlockButton")}
         </Link>
       </div>
@@ -40,7 +41,7 @@ export default function PortfolioSection() {
           textId={"pages.home.portfolioSection.portfolioButton"}
           type={"white"}
           size={"big"}
-          url={"#"}
+          url={"/portfolio"}
         />
       </div>
     </div>

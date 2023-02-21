@@ -12,6 +12,7 @@ import starWhite from "../../../public/pages/home/icons/starWhite.svg";
 import Button from "../../elements/button";
 import { useIntl } from "react-intl";
 import FlippingTile from "../../elements/flippingTile";
+import url from "../../../utils/routing/url";
 
 export default function OfferSection() {
   const intl = useIntl();
@@ -23,7 +24,7 @@ export default function OfferSection() {
           {__("pages.home.offerSection.title")}
         </h2>
         <Link
-          href={"#"}
+          href={url.offerPage}
           className={styles.secondaryHeader}
           dangerouslySetInnerHTML={{
             __html: intl.formatMessage({

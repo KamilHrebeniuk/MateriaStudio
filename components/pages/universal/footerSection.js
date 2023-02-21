@@ -10,6 +10,7 @@ import Linkedin_icon from "../../../public/pages/universal/footer/icons/Linkedin
 import Twitter_icon from "../../../public/pages/universal/footer/icons/Twitter.png";
 import Link from "next/link";
 import __ from "/utils/lang/translate";
+import url from "../../../utils/routing/url";
 
 export default function FooterSection() {
   return (
@@ -53,16 +54,16 @@ export default function FooterSection() {
           <h4 className={styles.sectionHeaders}>
             {__("pages.universal.footerSection.pagesTitle")}
           </h4>
-          <Link className={styles.sectionContent} href="/">
+          <Link className={styles.sectionContent} href={url.homePage}>
             {__("pages.universal.footerSection.homepage")}
           </Link>
-          <Link className={styles.sectionContent} href="/">
+          <Link className={styles.sectionContent} href={url.portfolioPage}>
             {__("pages.universal.footerSection.portfolio")}
           </Link>
-          <Link className={styles.sectionContent} href="/">
+          <Link className={styles.sectionContent} href={url.offerPage}>
             {__("pages.universal.footerSection.offer")}
           </Link>
-          <Link className={styles.sectionContent} href="/">
+          <Link className={styles.sectionContent} href={url.contactPage}>
             {__("pages.universal.footerSection.contact")}
           </Link>
         </div>
