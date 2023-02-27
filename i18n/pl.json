@@ -1,17 +1,6 @@
 {
   "pages": {
     "home": {
-      "universal": {
-        "footerSection": {
-          "pagesTitle": "Strony",
-          "homepage": "Główna",
-          "portfolio": "Portfolio",
-          "offer": "Cennik",
-          "contact": "Kontakt",
-          "socials": "Społecznościowe",
-          "copyrights": "Wszelkie prawa zastrzeżone - MATERIA studio Patrycja Minecka"
-        }
-      },
       "welcomeSection": {
         "title": "Łączymy kropki",
         "description": "Materia Studio to dwie natury - sztuka połączona z inżynierską precyzją. Jako designer podchodzę do projektów z otwartą głową i nieskończoną wyobraźnią. Jako inżynier pilnuję, by końcowy efekt był idealnie wykończony i jakościowy na każdym poziomie.<br><br>Już nie musisz się męczyć - pomogę Ci połączyć kropki",
@@ -41,6 +30,17 @@
         "graphicCart": "Pakiet dla firm",
         "graphicStar": "Pakiet 3D",
         "moreInformation": "Dowiedz się więcej"
+      }
+    },
+    "universal": {
+      "footerSection": {
+        "pagesTitle": "Strony",
+        "homepage": "Główna",
+        "portfolio": "Portfolio",
+        "offer": "Cennik",
+        "contact": "Kontakt",
+        "socials": "Społecznościowe",
+        "copyrights": "Wszelkie prawa zastrzeżone - MATERIA studio Patrycja Minecka"
       }
     }
   }
