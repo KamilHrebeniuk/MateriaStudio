@@ -10,13 +10,10 @@ import cartWhite from "../../../public/pages/home/icons/cartWhite.svg";
 import starPurple from "../../../public/pages/home/icons/starPurple.svg";
 import starWhite from "../../../public/pages/home/icons/starWhite.svg";
 import Button from "../../elements/button";
-import { useIntl } from "react-intl";
 import FlippingTile from "../../elements/flippingTile";
 import url from "../../../utils/routing/url";
 
 export default function OfferSection() {
-  const intl = useIntl();
-
   return (
     <div className={styles.container}>
       <div className={styles.headersContainer}>
@@ -27,9 +24,7 @@ export default function OfferSection() {
           href={url.offerPage}
           className={styles.secondaryHeader}
           dangerouslySetInnerHTML={{
-            __html: intl.formatMessage({
-              id: "pages.home.offerSection.advert",
-            }),
+            __html: __("pages.home.offerSection.advert"),
           }}
         />
       </div>

@@ -1,4 +1,3 @@
-import { useIntl } from "react-intl";
 import styles from "../../../styles/pages/home/welcomeSection.module.css";
 import useWindowSize from "../../../hooks/useWindowSize";
 import __ from "/utils/lang/translate";
@@ -6,8 +5,6 @@ import Button from "../../elements/button";
 import url from "../../../utils/routing/url";
 
 export default function WelcomeSection() {
-  const intl = useIntl();
-
   const windowSize = useWindowSize();
   const sectionHeight = windowSize.height > 500 ? "100vh" : "500px";
 
@@ -20,9 +17,7 @@ export default function WelcomeSection() {
         <span
           className={styles.description}
           dangerouslySetInnerHTML={{
-            __html: intl.formatMessage({
-              id: "pages.home.welcomeSection.description",
-            }),
+            __html: __("pages.home.welcomeSection.description"),
           }}
         />
         <Button

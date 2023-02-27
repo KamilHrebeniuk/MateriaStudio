@@ -1,0 +1,47 @@
+{
+  "pages": {
+    "home": {
+      "universal": {
+        "footerSection": {
+          "pagesTitle": "EN Strony",
+          "homepage": "EN Główna",
+          "portfolio": "EN Portfolio",
+          "offer": "EN Cennik",
+          "contact": "EN Kontakt",
+          "socials": "EN Społecznościowe",
+          "copyrights": "EN Wszelkie prawa zastrzeżone - MATERIA studio Patrycja Minecka"
+        }
+      },
+      "welcomeSection": {
+        "title": "EN Łączymy kropki",
+        "description": "EN Materia Studio to dwie natury - sztuka połączona z inżynierską precyzją. Jako designer podchodzę do projektów z otwartą głową i nieskończoną wyobraźnią. Jako inżynier pilnuję, by końcowy efekt był idealnie wykończony i jakościowy na każdym poziomie.<br><br>Już nie musisz się męczyć - pomogę Ci połączyć kropki",
+        "startButton": "EN Startujemy!"
+      },
+      "authoritySection": {
+        "title": "EN Już nie musisz się męczyć - pomogę Ci połączyć kropki!",
+        "description": "EN Materia Studio to dwie natury - sztuka połączona z inżynierską precyzją. Jako designer podchodzę do projektów z otwartą głową i nieskończoną wyobraźnią. Jako inżynier pilnuję, by końcowy efekt był idealnie wykończony i jakościowy na każdym poziomie.",
+        "startButton": "EN Startujemy!"
+      },
+      "portfolioSection": {
+        "portfolioHeader": "EN W tym pomogłam innym",
+        "checkPortfolioButton": "EN Zobacz wybrane realizacje w portfolio",
+        "purpleBlockButton": "EN Kliknij i dowiedz się więcej",
+        "portfolioButton": "EN Zobacz portfolio"
+      },
+      "distinguishSection": {
+        "title": "EN Czym się wyróżniam?"
+      },
+      "offerSection": {
+        "title": "EN Oferta",
+        "advert": "EN Pakiety idealne <b>dla Ciebie</b>! Oszczędzasz czas i pieniądze",
+        "description": "EN Zapoznaj się z całą ofertą i wybierz rozwiązanie pasujące do Ciebie!",
+        "button": "EN Moja oferta",
+        "graphicHeart": "EN Pakiet graficzny",
+        "graphicPerson": "EN Pakiet logo",
+        "graphicCart": "EN Pakiet dla firm",
+        "graphicStar": "EN Pakiet 3D",
+        "moreInformation": "EN Dowiedz się więcej"
+      }
+    }
+  }
+}

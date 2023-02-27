@@ -107,7 +107,6 @@ export default function FooterSection() {
           <span>Copyright © 2022</span>
         </div>
       </div>
-      {/*</Image>*/}
     </footer>
   );
 }
