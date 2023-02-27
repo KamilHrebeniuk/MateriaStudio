@@ -6,7 +6,7 @@ import PortfolioSection from "../components/pages/home/portfolioSection";
 import DistinguishSection from "../components/pages/home/distinguishSection";
 import OfferSection from "../components/pages/home/offerSection";
 
-export default function App() {
+export default function HomePage() {
   return (
     <Layout>
       <WelcomeSection />

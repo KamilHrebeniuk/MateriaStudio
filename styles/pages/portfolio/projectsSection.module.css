@@ -1,0 +1,83 @@
+.container {
+  background-color: var(--theme_white);
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  margin: auto;
+  width: 1200px;
+}
+
+.contentRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tileContainer {
+  background-color: #a1e44d;
+  width: 380px;
+  height: 380px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.imageImage {
+  position: absolute;
+}
+
+.imageCover {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition-duration: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.imageText {
+  opacity: 0;
+  color: var(--theme_white);
+  transition-duration: 0.5s;
+  font-size: var(--theme_font_size_description);
+  font-weight: var(--theme_font_weight_bold);
+  width: 280px;
+  text-align: center;
+}
+
+.imageArrowContainer {
+  opacity: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--theme_white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 55px;
+  transition-duration: 0.5s;
+}
+
+.imageCover:hover {
+  background-color: rgba(var(--accent_primary_rgb), 0.75);
+}
+
+.imageCover:hover .imageText {
+  opacity: 1;
+}
+
+.imageCover:hover .imageArrowContainer {
+  opacity: 1;
+}
+
+.descriptionContainer {
+  width: 100%;
+  height: 200px;
+  background-color: #a1e44d;
+}

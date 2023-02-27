@@ -12,7 +12,7 @@
 .smallPurpleAccent {
   background-color: var(--accent_primary);
   color: var(--theme_white);
-  border: solid 1px var(--accent_primary);;
+  border: solid 1px var(--accent_primary);
   font-size: var(--theme_font_size_subpoint);
   width: 240px;
   line-height: 45px;
@@ -22,7 +22,7 @@
   background-color: var(--theme_purple);
   color: var(--theme_white);
   border-radius: 20px;
-  border: solid 1px var(--theme_purple);;
+  border: solid 1px var(--theme_purple);
   font-size: var(--theme_font_size_subpoint);
   width: 240px;
   line-height: 45px;

@@ -26,12 +26,12 @@ export default function WelcomeSection() {
           }}
         />
         <Button
-            textId={"pages.home.welcomeSection.startButton"}
-            type={"purpleAccent"}
-            size={"small"}
-            url={url.offerPage}
+          textId={"pages.home.welcomeSection.startButton"}
+          type={"purpleAccent"}
+          size={"small"}
+          url={url.offerPage}
         />
-        </div>
+      </div>
     </div>
   );
 }

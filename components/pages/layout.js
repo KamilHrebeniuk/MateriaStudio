@@ -9,6 +9,7 @@ export default function Layout({ children }) {
       <Head>
         <title>Materia Studio</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="robots" content="noindex" />
       </Head>
       <header style={{ display: "none" }}>Header</header>
       <main>{children}</main>

@@ -1,3 +1,4 @@
+import "react-quill/dist/quill.snow.css";
 import "../styles/typekit.css";
 import "../styles/globals.css";
 import "../styles/variables.css";

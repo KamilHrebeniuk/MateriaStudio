@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
+  images: {
+    unoptimized: true,
+  },
   i18n: {
     // The locales you want to support in your app
     locales: ["pl", "en"],
