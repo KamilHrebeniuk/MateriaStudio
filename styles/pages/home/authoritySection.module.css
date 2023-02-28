@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--theme_white);
+  background-color: var(--theme_darkgray);
   width: 100%;
   display: flex;
 }
@@ -19,23 +19,26 @@
 }
 
 .title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   font-weight: var(--theme_font_weight_bold);
   line-height: 60px;
   font-size: var(--theme_font_size_header);
-  color: var(--theme_darkgray);
+  color: var(--theme_white);
+  letter-spacing: 0.01em;
 }
 
 .description {
   font-weight: 300;
   font-size: var(--theme_font_size_description);
-  color: var(--theme_darkgray);
+  color: var(--theme_white);
+  letter-spacing: 0.01em;
+  line-height: 32px;
 }
 
 .image {
   width: auto;
-  height: 530px;
-  margin-top: 190px;
+  height: 560px;
+  margin-top: 140px;
 }
 
 .startButton {

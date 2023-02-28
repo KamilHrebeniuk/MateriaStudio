@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  border: solid 5px var(--theme_purple);
+  border: solid 2px var(--theme_white);
   transition: 0.5s;
 }
 
@@ -23,10 +23,12 @@
   background-color: var(--accent_primary);
   transform: rotateY(0deg);
   transition: 0.5s;
+  border: solid 2px var(--theme_darkgray);
 }
 
 .graphicsLinkNewHover {
   background-color: var(--accent_primary);
+  border: solid 2px var(--theme_darkgray);
   transform: rotateY(90deg);
   transition: 0.5s;
 }
@@ -41,15 +43,14 @@
   max-width: 108px;
   max-height: 108px;
   margin: 55px auto 45px;
-  color: var(--theme_white);
 }
 
 .graphicsDescription {
   font-size: var(--theme_font_size_description);
-  color: var(--theme_purple);
+  color: var(--theme_white);
 }
 
 .graphicsDescriptionNew {
   font-size: var(--theme_font_size_description);
-  color: var(--theme_white);
+  color: var(--theme_darkgray);
 }

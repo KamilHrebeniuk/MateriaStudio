@@ -1,0 +1,27 @@
+.container {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.subTitle {
+  margin: 0;
+  font-size: var(--theme_font_size_description);
+  font-weight: var(--theme_font_weight_bold);
+  color: var(--accent_primary);
+  line-height: 30px;
+}
+
+.title {
+  margin: 10px 0 7px;
+  font-weight: var(--theme_font_weight_bold);
+  font-size: var(--theme_font_size_header);
+  color: var(--theme_white);
+  letter-spacing: 0.01em;
+}
+
+.description {
+  margin: 0;
+  font-size: var(--theme_font_size_subpoint);
+  font-weight: var(--theme_font_weight_normal);
+  color: var(--theme_white);
+}

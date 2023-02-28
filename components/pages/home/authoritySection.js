@@ -19,8 +19,8 @@ export default function AuthoritySection() {
           <div className={styles.startButton}>
             <Button
               textId={"pages.home.authoritySection.startButton"}
-              type={"white"}
-              size={"small"}
+              type={"purpleAccent"}
+              size={"big"}
               url={url.offerPage}
             />
           </div>

@@ -1,8 +1,8 @@
 import styles from "../../../styles/pages/home/welcomeSection.module.css";
 import useWindowSize from "../../../hooks/useWindowSize";
 import __ from "/utils/lang/translate";
-import Button from "../../elements/button";
-import url from "../../../utils/routing/url";
+import Image from "next/image";
+import background from "/public/pages/home/homeBG.jpeg";
 
 export default function WelcomeSection() {
   const windowSize = useWindowSize();
@@ -10,7 +10,11 @@ export default function WelcomeSection() {
 
   return (
     <div className={styles.container} style={{ height: sectionHeight }}>
+      <Image className={styles.background} src={background} alt={"#"} />
       <div className={styles.content}>
+        <span className={styles.titleShadow}>
+          {__("pages.home.welcomeSection.title")}
+        </span>
         <h1 className={styles.title}>
           {__("pages.home.welcomeSection.title")}
         </h1>
@@ -20,12 +24,12 @@ export default function WelcomeSection() {
             __html: __("pages.home.welcomeSection.description"),
           }}
         />
-        <Button
-          textId={"pages.home.welcomeSection.startButton"}
-          type={"purpleAccent"}
-          size={"small"}
-          url={url.offerPage}
-        />
+        {/*<Button*/}
+        {/*  textId={"pages.home.welcomeSection.startButton"}*/}
+        {/*  type={"purpleAccent"}*/}
+        {/*  size={"small"}*/}
+        {/*  url={url.offerPage}*/}
+        {/*/>*/}
       </div>
     </div>
   );

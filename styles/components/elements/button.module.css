@@ -3,7 +3,7 @@
   font-weight: var(--theme_font_weight_bold);
   text-transform: uppercase;
   cursor: pointer;
-  display: block;
+  display: inline-block;
   transition-duration: 0.5s;
 }
 
@@ -42,11 +42,10 @@
 .bigPurpleAccent {
   background-color: var(--accent_primary);
   color: var(--theme_white);
-  border-radius: 40px;
-  border: none;
+  border: solid 2px var(--accent_primary);
   font-size: var(--theme_font_size_description);
-  width: 410px;
-  line-height: 80px;
+  padding: 30px 40px;
+  line-height: 30px;
 }
 
 .bigPurple {
@@ -55,17 +54,17 @@
   border-radius: 40px;
   border: none;
   font-size: var(--theme_font_size_description);
-  width: 410px;
-  line-height: 80px;
+  padding: 30px 40px;
+  line-height: 30px;
 }
 
 .bigWhite {
-  background-color: var(--theme_white);
-  color: var(--theme_purple);
-  border: solid 1px var(--theme_purple);
+  background-color: transparent;
+  color: var(--theme_white);
+  border: solid 2px var(--theme_white);
   font-size: var(--theme_font_size_description);
-  width: 410px;
-  line-height: 80px;
+  padding: 30px 40px;
+  line-height: 30px;
 }
 
 /************ SMALL HOVER ************/
@@ -101,14 +100,28 @@
 /************ BIG HOVER ************/
 
 .bigWhite:hover {
-  border: solid 1px var(--theme_purple);
+  border: solid 2px var(--theme_white);
   border-radius: 40px;
   background-color: var(--theme_purple);
   color: var(--theme_white);
 }
 
 .bigWhite:active {
-  border: solid 1px var(--accent_primary);
+  border: solid 2px var(--accent_primary);
+  border-radius: 40px;
+  background-color: var(--accent_primary);
+  color: var(--theme_white);
+}
+
+.bigPurpleAccent:hover {
+  border: solid 2px var(--theme_white);
+  border-radius: 40px;
+  background-color: var(--theme_purple);
+  color: var(--theme_white);
+}
+
+.bigPurpleAccent:active {
+  border: solid 2px var(--accent_primary);
   border-radius: 40px;
   background-color: var(--accent_primary);
   color: var(--theme_white);

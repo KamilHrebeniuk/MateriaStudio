@@ -2,12 +2,12 @@ import styles from "../../../styles/pages/universal/footer.module.css";
 import Image from "next/image";
 import Logo_image from "../../../public/pages/universal/footer/Logo.png";
 import Background_image from "../../../public/pages/universal/footer/FooterBG.png";
-import Phone_icon from "../../../public/pages/universal/footer/icons/Phone.svg";
-import Mail_icon from "../../../public/pages/universal/footer/icons/Mail.svg";
-import Instagram_icon from "../../../public/pages/universal/footer/icons/Instagram.png";
-import Facebook_icon from "../../../public/pages/universal/footer/icons/Facebook.png";
-import Linkedin_icon from "../../../public/pages/universal/footer/icons/Linkedin.png";
-import Twitter_icon from "../../../public/pages/universal/footer/icons/Twitter.png";
+import Phone_icon from "../../../public/pages/universal/icons/Phone.svg";
+import Mail_icon from "../../../public/pages/universal/icons/Mail.svg";
+import Instagram_icon from "../../../public/pages/universal/icons/Instagram.png";
+import Facebook_icon from "../../../public/pages/universal/icons/Facebook.png";
+import Linkedin_icon from "../../../public/pages/universal/icons/Linkedin.png";
+import Twitter_icon from "../../../public/pages/universal/icons/Twitter.png";
 import Link from "next/link";
 import __ from "/utils/lang/translate";
 import url from "../../../utils/routing/url";
@@ -104,7 +104,7 @@ export default function FooterSection() {
         </div>
         <div className={styles.copyright}>
           <span>{__("pages.universal.footerSection.copyrights")}</span>
-          <span>Copyright © 2022</span>
+          <span>Copyright © {new Date().getFullYear()}</span>
         </div>
       </div>
     </footer>

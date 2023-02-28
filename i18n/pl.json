@@ -3,28 +3,42 @@
     "home": {
       "welcomeSection": {
         "title": "Łączymy kropki",
-        "description": "Materia Studio to dwie natury - sztuka połączona z inżynierską precyzją. Jako designer podchodzę do projektów z otwartą głową i nieskończoną wyobraźnią. Jako inżynier pilnuję, by końcowy efekt był idealnie wykończony i jakościowy na każdym poziomie.<br><br>Już nie musisz się męczyć - pomogę Ci połączyć kropki",
+        "description": "Materia Studio to dwie natury - sztuka połączona z inżynierską precyzją. Jako designer podchodzę do projektów z otwartą głową i nieskończoną wyobraźnią. Jako inżynier pilnuję, by końcowy efekt był idealnie wykończony i jakościowy na każdym poziomie.<br/><br/>Już nie musisz się męczyć - pomogę Ci połączyć kropki",
         "startButton": "Startujemy!"
       },
       "authoritySection": {
         "title": "Już nie musisz się męczyć - pomogę Ci połączyć kropki!",
-        "description": "Materia Studio to dwie natury - sztuka połączona z inżynierską precyzją. Jako designer podchodzę do projektów z otwartą głową i nieskończoną wyobraźnią. Jako inżynier pilnuję, by końcowy efekt był idealnie wykończony i jakościowy na każdym poziomie.",
-        "startButton": "Startujemy!"
+        "description": "Magister inżynier z wykształcenia, grafik z zamiłowania. Do procesu projektowania podchodzę z inżynierskim nastawieniem i narzędziami, ale także z otwartym umysłem pełnym pomysłów. Biorę myśli krążące w Twojej głowie i ubieram je w szaty graficzne. Łączę kropki, tworzę wzory, kreuję rozwiąznia, które docierają do Twoich klientów.",
+        "startButton": "Połączmy kropki!"
+      },
+      "quickContactSection": {
+        "subTitle": "Porozmawiajmy.",
+        "title": "Masz pytania? Umówmy się na rozmowę!",
+        "description": "Wybierz najlepszą dla siebie opcję.",
+        "button1": "UMÓW SPOTKANIE ONLINE",
+        "button2": "kontakt@materiastudio.design"
       },
       "portfolioSection": {
-        "portfolioHeader": "W tym pomogłam innym",
-        "checkPortfolioButton": "Zobacz wybrane realizacje w portfolio",
-        "purpleBlockButton": "Kliknij i dowiedz się więcej",
-        "portfolioButton": "Zobacz portfolio"
+        "subTitle": "Zobacz wybrane realizacje w portfolio.",
+        "title": "W tym pomogłam innym:",
+        "description": "Kliknij i dowiedz się więcej.",
+        "button": "Zobacz portfolio"
       },
       "distinguishSection": {
-        "title": "Czym się wyróżniam?"
+        "subTitle": "Chcę, żeby nasza współpraca przywoływała same dobre emocje.",
+        "title": "Co wyróżnia współpracę ze mną?",
+        "descriptionTitle01": "Ciągły kontakt",
+        "descriptionTitle02": "Nie tworzę dla Ciebie",
+        "descriptionTitle03": "Terminowość",
+        "description01": "Wyznaję zasadę, że podstawą udanego projektu jest udana komunikacja. Dzięki rozmowie jestem w stanie dokładnie poznać Twoje potrzeby, cele i wizję końcowego projektu. W trakcie pracy informuję Cię na temat aktualnych postępów w działaniu, a także dokładnie słucham uwag i sugestii. Wszystko w celu zapewnienia nam komfortu we współpracy i jakości projektu.",
+        "description02": "Tworzę dla Twoich klientów. Mówi się, że nie należy oceniać książki po okładce. Prawda jest taka, że pierwszą rzeczą, na którą patrzą klienci jest właśnie okładka: logo, opakowanie, kolor, kształt... Będąc grafikiem, musisz wiedzieć, jak przyciągnąć i utrzymać uwagę odbiorcy, a przez te kilka sekund, które masz na pierwsze wrażenie, sprawić, by się w Tobie zakochał. Tym właśnie się zajmuję.",
+        "description03": "Deadline to moje drugie imię. Podczas podpisywania umowy wspólnie ustalamy termin oddania ostatecznej wersji projektu, a ja zawsze go pilnuję. Po przesłaniu finalnej pracy, mamy dodatkowy czas na ostateczną weryfikację z Twojej strony i ewentualne poprawki. Po ostatecznej akceptacji projektu następuje płatność i przesłanie plików z projektem."
       },
       "offerSection": {
+        "subTitle": "Pakiety idealne dla Ciebie! Oszczędzasz czas i pieniądze..",
         "title": "Oferta",
-        "advert": "Pakiety idealne <b>dla Ciebie</b>! Oszczędzasz czas i pieniądze",
         "description": "Zapoznaj się z całą ofertą i wybierz rozwiązanie pasujące do Ciebie!",
-        "button": "Moja oferta",
+        "button": "Sprawdź cennik",
         "graphicHeart": "Pakiet graficzny",
         "graphicPerson": "Pakiet logo",
         "graphicCart": "Pakiet dla firm",
