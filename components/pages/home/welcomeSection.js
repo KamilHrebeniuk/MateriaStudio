@@ -6,7 +6,8 @@ import background from "/public/pages/home/homeBG.jpeg";
 
 export default function WelcomeSection() {
   const windowSize = useWindowSize();
-  const sectionHeight = windowSize.height > 500 ? "100vh" : "500px";
+  const sectionHeight =
+    windowSize.height > 500 ? "calc(100vh - 130px)" : "500px";
 
   return (
     <div className={styles.container} style={{ height: sectionHeight }}>

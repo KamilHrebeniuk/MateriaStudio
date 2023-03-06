@@ -47,15 +47,13 @@
       }
     },
     "universal": {
-      "footerSection": {
-        "pagesTitle": "Strony",
-        "homepage": "Główna",
-        "portfolio": "Portfolio",
-        "offer": "Cennik",
-        "contact": "Kontakt",
-        "socials": "Społecznościowe",
-        "copyrights": "Wszelkie prawa zastrzeżone - MATERIA studio Patrycja Minecka"
-      }
+      "pagesTitle": "Strony",
+      "homepage": "Home",
+      "portfolio": "Portfolio",
+      "offer": "Cennik",
+      "contact": "Kontakt",
+      "socials": "Społecznościowe",
+      "copyrights": "Wszelkie prawa zastrzeżone - MATERIA studio Patrycja Minecka"
     }
   }
 }

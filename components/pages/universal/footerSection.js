@@ -1,6 +1,6 @@
-import styles from "../../../styles/pages/universal/footer.module.css";
+import styles from "../../../styles/pages/universal/footerSection.module.css";
 import Image from "next/image";
-import Logo_image from "../../../public/pages/universal/footer/Logo.png";
+import Logo_image from "../../../public/pages/universal/icons/Logo.svg";
 import Background_image from "../../../public/pages/universal/footer/FooterBG.png";
 import Phone_icon from "../../../public/pages/universal/icons/Phone.svg";
 import Mail_icon from "../../../public/pages/universal/icons/Mail.svg";
@@ -52,24 +52,24 @@ export default function FooterSection() {
         </div>
         <div className={styles.pagesContainer}>
           <h4 className={styles.sectionHeaders}>
-            {__("pages.universal.footerSection.pagesTitle")}
+            {__("pages.universal.pagesTitle")}
           </h4>
           <Link className={styles.sectionContent} href={url.homePage}>
-            {__("pages.universal.footerSection.homepage")}
+            {__("pages.universal.homepage")}
           </Link>
           <Link className={styles.sectionContent} href={url.portfolioPage}>
-            {__("pages.universal.footerSection.portfolio")}
+            {__("pages.universal.portfolio")}
           </Link>
           <Link className={styles.sectionContent} href={url.offerPage}>
-            {__("pages.universal.footerSection.offer")}
+            {__("pages.universal.offer")}
           </Link>
           <Link className={styles.sectionContent} href={url.contactPage}>
-            {__("pages.universal.footerSection.contact")}
+            {__("pages.universal.contact")}
           </Link>
         </div>
         <div className={styles.linksContainer}>
           <h4 className={styles.sectionHeaders}>
-            {__("pages.universal.footerSection.socials")}
+            {__("pages.universal.socials")}
           </h4>
           <div className={styles.sectionIconsContainer}>
             <Link className={styles.sectionIconContainer} href="/">
@@ -103,7 +103,7 @@ export default function FooterSection() {
           </div>
         </div>
         <div className={styles.copyright}>
-          <span>{__("pages.universal.footerSection.copyrights")}</span>
+          <span>{__("pages.universal.copyrights")}</span>
           <span>Copyright © {new Date().getFullYear()}</span>
         </div>
       </div>

@@ -1,0 +1,52 @@
+.container {
+  background-color: var(--theme_darkgray);
+  width: 100%;
+  height: 130px;
+}
+
+.content {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  width: 233px;
+  border-right: solid 1px rgba(var(--theme_white_rgb), 0.25);
+}
+
+.logoImage {
+  width: 173px;
+}
+
+.socialsContainer {
+  width: 242px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialsIcon {
+  width: 38px;
+  height: 38px;
+}
+
+.pagesContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 425px;
+}
+
+.pagesLink {
+  color: var(--theme_white);
+  text-transform: uppercase;
+  padding: 10px;
+  border-bottom: solid 2px var(--theme_darkgray);
+}
+
+.pagesLink:hover {
+  transition-duration: 0.5s;
+  border-bottom: solid 2px var(--theme_white);
+}

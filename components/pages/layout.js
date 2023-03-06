@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Head from "next/head";
 import FooterSection from "./universal/footerSection";
-// import Image from "next/image";
+import MenuSection from "./universal/menuSection";
 
 export default function Layout({ children }) {
   return (
@@ -11,7 +11,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="noindex" />
       </Head>
-      <header style={{ display: "none" }}>Header</header>
+      <MenuSection />
       <main>{children}</main>
       <FooterSection />
     </>
