@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--theme_white);
+  background-color: var(--theme_darkgray);
   width: 100%;
   display: flex;
 }
@@ -7,6 +7,23 @@
 .content {
   margin: auto;
   width: 1200px;
+}
+
+.filtersContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 910px;
+  margin: 60px auto 60px;
+}
+
+.filter {
+  color: var(--theme_white);
+  padding: 10px;
+  background-color: var(--accent_primary);
+  border: 1px solid #fffffc;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .contentRow {

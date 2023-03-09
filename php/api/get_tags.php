@@ -4,7 +4,7 @@ include "connect.php";
 $conn = Database::getConnection();
 
 try {
-    $stmt = $conn->prepare("SELECT * FROM `projects`");
+    $stmt = $conn->prepare("SELECT * FROM `tags`");
     $stmt->execute();
 
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);

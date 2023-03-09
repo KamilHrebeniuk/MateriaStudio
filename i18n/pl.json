@@ -1,7 +1,7 @@
 {
   "pages": {
     "home": {
-      "welcomeSection": {
+      "headerSection": {
         "title": "Łączymy kropki",
         "description": "Materia Studio to dwie natury - sztuka połączona z inżynierską precyzją. Jako designer podchodzę do projektów z otwartą głową i nieskończoną wyobraźnią. Jako inżynier pilnuję, by końcowy efekt był idealnie wykończony i jakościowy na każdym poziomie.<br/><br/>Już nie musisz się męczyć - pomogę Ci połączyć kropki",
         "startButton": "Startujemy!"
@@ -44,6 +44,17 @@
         "graphicCart": "Pakiet dla firm",
         "graphicStar": "Pakiet 3D",
         "moreInformation": "Dowiedz się więcej"
+      }
+    },
+    "portfolio": {
+      "headerSection": {
+        "title": "Portfolio"
+      },
+      "projectSection": {
+        "title": "W tym pomogłam innym:",
+        "subTitle": "Zobacz wybrane realizacje w portfolio.",
+        "description": "Kliknij i dowiedz się więcej.",
+        "allFilters": "WSZYSTKIE"
       }
     },
     "universal": {

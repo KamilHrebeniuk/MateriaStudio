@@ -5,26 +5,24 @@ import portfolio1 from "../../public/pages/portfolio/portfolio1.png";
 import arrow from "../../public/pages/portfolio/icons/arrow.svg";
 import portfolio2 from "../../public/pages/portfolio/portfolio2.png";
 import portfolio3 from "../../public/pages/portfolio/portfolio3.png";
-import { useEffect } from "react";
 import { useRouter } from "next/router";
-import axios from "axios";
 
 export default function ExpandableTilesRow() {
   // const [opened, setOpened] = useState(0);
   const router = useRouter();
 
-  useEffect(() => {
-    // let data={content : value}
-    axios
-      .post("/api/get-projects")
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-    // console.log(value)
-  }, []);
+  // useEffect(() => {
+  //   // let data={content : value}
+  //   axios
+  //     .post("/api/get-projects")
+  //     .then((response) => {
+  //       console.log(response);
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //     });
+  //   // console.log(value)
+  // }, []);
 
   return (
     <div className={styles.contentRow}>

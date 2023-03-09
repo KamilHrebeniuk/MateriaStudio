@@ -1,6 +1,6 @@
 import styles from "../../../styles/pages/home/quickContact.module.css";
 import StandardHeader from "../../elements/standardHeader";
-import ContactButton from "../../../styles/components/elements/contactButton";
+import ContactButton from "../../elements/contactButton";
 
 export default function QuickContact() {
   return (
