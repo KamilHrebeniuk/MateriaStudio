@@ -1,9 +1,4 @@
 import styles from "../../../styles/pages/portfolio/projectsSection.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import portfolio1 from "/public/pages/portfolio/portfolio1.png";
-import portfolio2 from "/public/pages/portfolio/portfolio2.png";
-import portfolio3 from "/public/pages/portfolio/portfolio3.png";
 import ExpandableTilesRow from "../../elements/expandableTilesRow";
 import StandardHeader from "../../elements/standardHeader";
 import { useEffect, useState } from "react";
@@ -12,6 +7,8 @@ import { useRouter } from "next/router";
 import { useLocalStorage } from "/hooks/useLocalStorage";
 
 export default function ProjectsSection() {
+  const lang = "PL";
+
   // eslint-disable-next-line
   const [error, setError] = useState(null);
   // eslint-disable-next-line
@@ -19,13 +16,15 @@ export default function ProjectsSection() {
   const [filters, setFilters] = useLocalStorage("filters", []);
   const [projects, setProjects] = useLocalStorage("projects", []);
   // eslint-disable-next-line
-  const [projectsLoaded, setProjectsLoaded] = useState(false);
+  const [projectsLoaded, setProjectsLoaded] = useState();
+
+  const [projectsList, setProjectsList] = useState();
 
   const router = useRouter();
 
   useEffect(() => {
-    console.log(filters);
-    console.log(projects);
+    // console.log(filters);
+    // console.log(projects);
     fetch("http://qfgcdwu.cluster027.hosting.ovh.net/api/get_tags.php")
       .then((res) => res.json())
       .then(
@@ -59,25 +58,30 @@ export default function ProjectsSection() {
   // console.log("filters", filters);
   // console.log("projects", projects);
 
-  console.log(router.query);
+  // console.log(router.query);
+
+  const parsedProjects = [];
+  const tmpProjectList = [];
 
   useEffect(() => {
-    console.log("reload");
+    // console.log("reload");
 
     const filterID = filters.filter((filter) => {
       return filter?.Link === router.query["filter"];
     })[0]?.ID;
 
-    console.log(filterID);
+    // console.log(filterID);
 
     if (projects.length > 0) {
-      const parsedProjects = [];
-
       projects.forEach((project) => {
         // eslint-disable-next-line
-        let { Tags, ...rest } = project;
+        let { Tags, NamePL, NameEN, DescriptionPL, DescriptionEN, ...rest } =
+          project;
 
         if (project && project.Tags) {
+          rest.Name = lang === "EN" ? project.NameEN : project.NamePL;
+          rest.Description =
+            lang === "EN" ? project.DescriptionEN : project.DescriptionPL;
           rest.Tags = project.Tags.split(";").map((tagID) => {
             return parseInt(tagID, 10);
           });
@@ -89,8 +93,26 @@ export default function ProjectsSection() {
 
       setProjectsLoaded(true);
 
-      console.log("parsedProjects", parsedProjects);
+      // console.log("parsedProjects", parsedProjects);
     }
+
+    // console.log("start");
+    // console.log("Len:", parsedProjects.length);
+    for (let i = 0; i < parsedProjects.length; i += 3) {
+      // console.log("I:", i);
+      // console.log("ProjI:", parsedProjects[i]);
+      const projects = [];
+      for (let j = 0; j < 3; j++) {
+        if (parsedProjects[i + j]) {
+          projects.push(parsedProjects[i + j]);
+        }
+      }
+
+      tmpProjectList.push(<ExpandableTilesRow projects={projects} />);
+      setProjectsList(tmpProjectList);
+    }
+
+    // console.log("projectList", projectsList);
   }, [router.query]);
 
   return (
@@ -127,18 +149,20 @@ export default function ProjectsSection() {
             );
           })}
         </div>
-        <ExpandableTilesRow />
-        <div className={styles.contentRow}>
-          <Link className={styles.tileContainer} href={"#"}>
-            <Image src={portfolio1} alt={"#"} />
-          </Link>
-          <Link className={styles.tileContainer} href={"#"}>
-            <Image src={portfolio2} alt={"#"} />
-          </Link>
-          <Link className={styles.tileContainer} href={"#"}>
-            <Image src={portfolio3} alt={"#"} />
-          </Link>
-        </div>
+
+        {projectsList}
+
+        {/*<div className={styles.contentRow}>*/}
+        {/*  <Link className={styles.tileContainer} href={"#"}>*/}
+        {/*    <Image src={portfolio1} alt={"#"} />*/}
+        {/*  </Link>*/}
+        {/*  <Link className={styles.tileContainer} href={"#"}>*/}
+        {/*    <Image src={portfolio2} alt={"#"} />*/}
+        {/*  </Link>*/}
+        {/*  <Link className={styles.tileContainer} href={"#"}>*/}
+        {/*    <Image src={portfolio3} alt={"#"} />*/}
+        {/*  </Link>*/}
+        {/*</div>*/}
       </div>
     </div>
   );
