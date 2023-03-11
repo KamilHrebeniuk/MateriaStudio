@@ -23,8 +23,6 @@ export default function ProjectsSection() {
   const router = useRouter();
 
   useEffect(() => {
-    // console.log(filters);
-    // console.log(projects);
     fetch("http://qfgcdwu.cluster027.hosting.ovh.net/api/get_tags.php")
       .then((res) => res.json())
       .then(
@@ -51,26 +49,13 @@ export default function ProjectsSection() {
       );
   }, []);
 
-  // console.log(error, isLoaded, projects);
-  //
-  // console.log(router.query["filter"]);
-
-  // console.log("filters", filters);
-  // console.log("projects", projects);
-
-  // console.log(router.query);
-
   const parsedProjects = [];
   const tmpProjectList = [];
 
   useEffect(() => {
-    // console.log("reload");
-
     const filterID = filters.filter((filter) => {
       return filter?.Link === router.query["filter"];
     })[0]?.ID;
-
-    // console.log(filterID);
 
     if (projects.length > 0) {
       projects.forEach((project) => {
@@ -92,15 +77,9 @@ export default function ProjectsSection() {
       });
 
       setProjectsLoaded(true);
-
-      // console.log("parsedProjects", parsedProjects);
     }
 
-    // console.log("start");
-    // console.log("Len:", parsedProjects.length);
     for (let i = 0; i < parsedProjects.length; i += 3) {
-      // console.log("I:", i);
-      // console.log("ProjI:", parsedProjects[i]);
       const projects = [];
       for (let j = 0; j < 3; j++) {
         if (parsedProjects[i + j]) {
@@ -108,12 +87,10 @@ export default function ProjectsSection() {
         }
       }
 
-      tmpProjectList.push(<ExpandableTilesRow projects={projects} />);
+      tmpProjectList.push(<ExpandableTilesRow projects={projects} key={i} />);
       setProjectsList(tmpProjectList);
     }
-
-    // console.log("projectList", projectsList);
-  }, [router.query]);
+  }, [projects, router.query]);
 
   return (
     <div className={styles.container}>
@@ -151,18 +128,6 @@ export default function ProjectsSection() {
         </div>
 
         {projectsList}
-
-        {/*<div className={styles.contentRow}>*/}
-        {/*  <Link className={styles.tileContainer} href={"#"}>*/}
-        {/*    <Image src={portfolio1} alt={"#"} />*/}
-        {/*  </Link>*/}
-        {/*  <Link className={styles.tileContainer} href={"#"}>*/}
-        {/*    <Image src={portfolio2} alt={"#"} />*/}
-        {/*  </Link>*/}
-        {/*  <Link className={styles.tileContainer} href={"#"}>*/}
-        {/*    <Image src={portfolio3} alt={"#"} />*/}
-        {/*  </Link>*/}
-        {/*</div>*/}
       </div>
     </div>
   );

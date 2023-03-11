@@ -100,14 +100,20 @@
 
 .descriptionContainer {
   width: 100%;
-  background-color: #a1e44d;
+  color: var(--theme_white);
+  font-size: var(--theme_font_size_description);
+  line-height: 60px;
   transition-duration: 0.5s;
 }
 
 .descriptionContainerOpened {
-  height: 200px;
+  height: 300px;
+  margin: 30px 0;
+  background-color: #a1e44d;
 }
 
 .descriptionContainerClosed {
   height: 0;
+  overflow: hidden;
+  margin: 0;
 }
