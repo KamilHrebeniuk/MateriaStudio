@@ -1,6 +1,7 @@
 .container {
   margin-top: 100px;
   margin-bottom: 40px;
+  display: inline-block;
 }
 
 .subTitle {

@@ -1,8 +1,8 @@
-import styles from "../../../styles/pages/home/quickContact.module.css";
+import styles from "../../../styles/pages/home/quickContactSection.module.css";
 import StandardHeader from "../../elements/standardHeader";
 import ContactButton from "../../elements/contactButton";
 
-export default function QuickContact() {
+export default function QuickContactSection() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>

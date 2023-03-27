@@ -13,9 +13,9 @@ export default function MenuSection() {
   return (
     <nav className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.logoContainer}>
+        <Link className={styles.logoContainer} href={url.homePage}>
           <Image className={styles.logoImage} src={Logo_image} alt={"#"} />
-        </div>
+        </Link>
         <div className={styles.socialsContainer}>
           <Image className={styles.socialsIcon} src={Linkedin_icon} alt={"#"} />
           <Image className={styles.socialsIcon} src={Twitter_icon} alt={"#"} />
@@ -38,6 +38,9 @@ export default function MenuSection() {
           </Link>
           <Link className={styles.pagesLink} href={url.contactPage}>
             {__("pages.universal.contact")}
+          </Link>
+          <Link className={styles.pagesLink} href={url.blogPage}>
+            {__("pages.universal.blog")}
           </Link>
         </div>
       </div>

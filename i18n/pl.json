@@ -44,6 +44,20 @@
         "graphicCart": "Pakiet dla firm",
         "graphicStar": "Pakiet 3D",
         "moreInformation": "Dowiedz się więcej"
+      },
+      "scheduleSection": {
+        "subTitle": "Pakiety idealne dla Ciebie! Oszczędzasz czas i pieniądze",
+        "title": "Etapy współpracy",
+        "description": "Może być to oferta jednorazowa, jak i dłuższa współpraca. Na co dzień współpracuję z dużymi firmami jak i jednoosobowymi działalnościami (rodzaj, specyfikacja działalności nie ma znaczenia).<br />Każde zlecenie jest ciągiem prac, by jak najlepiej sprostać Twoim oczekiwaniom!",
+        "bullet1": "Krótka rozmowa oraz dokładne wypełnienie briefu przez klienta.",
+        "bullet2": "Określenie dokładnych potrzeb i wymagań Klienta + przesłanie inspiracji.",
+        "bullet3": "Przesłanie oferty z wyceną i terminem wykonania pracy.",
+        "bullet4": "Podpisanie umowy oraz wpłacenie zadatku przez zleceniodawcę.",
+        "bullet5": "Przygotowanie i przedstawienie wstępnego zleconego projektu.",
+        "bullet6": "Zgłoszenie ewentualnych poprawek do projektu, dopracowanie szczegółów.",
+        "bullet7": "Przesłanie ostatecznego projektu Klientowi do akceptacji.",
+        "bullet8": "Rozliczenie - wpłata pozostałej kwoty na podstawie wystawionej faktury.",
+        "bullet9": "Przesłanie plików końcowych projektu."
       }
     },
     "portfolio": {
@@ -63,6 +77,7 @@
       "portfolio": "Portfolio",
       "offer": "Cennik",
       "contact": "Kontakt",
+      "blog": "Blog",
       "socials": "Społecznościowe",
       "copyrights": "Wszelkie prawa zastrzeżone - MATERIA studio Patrycja Minecka"
     }

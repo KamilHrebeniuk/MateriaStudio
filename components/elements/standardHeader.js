@@ -12,7 +12,12 @@ export default function StandardHeader({
     <div className={margins && styles.container}>
       <h3 className={styles.subTitle}>{__(subTitle)}</h3>
       <h2 className={styles.title}>{__(title)}</h2>
-      <span className={styles.description}>{__(description)}</span>
+      <span
+        className={styles.description}
+        dangerouslySetInnerHTML={{
+          __html: __(description),
+        }}
+      />
     </div>
   );
 }
