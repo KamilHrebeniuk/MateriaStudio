@@ -6,6 +6,7 @@ import PortfolioSection from "../components/pages/home/portfolioSection";
 import DistinguishSection from "../components/pages/home/distinguishSection";
 import OfferSection from "../components/pages/home/offerSection";
 import ScheduleSection from "../components/pages/home/scheduleSection";
+import ContactSection from "../components/pages/home/contactSection";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <OfferSection />
       <DistinguishSection />
       <ScheduleSection />
+      <ContactSection />
     </Layout>
   );
 }

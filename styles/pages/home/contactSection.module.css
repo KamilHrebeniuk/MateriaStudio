@@ -1,0 +1,27 @@
+.container {
+  background-color: var(--theme_darkgray);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  margin: 0 auto 100px;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contactFormContainer {
+  border-radius: 20px;
+  padding: 30px;
+  background-color: var(--theme_purple);
+  width: 660px;
+  height: 800px;
+}
+
+.contactContactContainer {
+  width: 375px;
+}

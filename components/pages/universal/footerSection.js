@@ -66,6 +66,9 @@ export default function FooterSection() {
           <Link className={styles.sectionContent} href={url.contactPage}>
             {__("pages.universal.contact")}
           </Link>
+          <Link className={styles.sectionContent} href={url.blogPage}>
+            {__("pages.universal.blog")}
+          </Link>
         </div>
         <div className={styles.linksContainer}>
           <h4 className={styles.sectionHeaders}>

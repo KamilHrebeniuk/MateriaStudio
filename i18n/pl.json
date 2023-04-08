@@ -58,6 +58,11 @@
         "bullet7": "Przesłanie ostatecznego projektu Klientowi do akceptacji.",
         "bullet8": "Rozliczenie - wpłata pozostałej kwoty na podstawie wystawionej faktury.",
         "bullet9": "Przesłanie plików końcowych projektu."
+      },
+      "contactSection": {
+        "subTitle": "Masz pytania?",
+        "title": "Zapraszam do współpracy",
+        "button": "Połączmy kropki!"
       }
     },
     "portfolio": {

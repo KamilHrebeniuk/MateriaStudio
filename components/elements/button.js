@@ -12,6 +12,8 @@ export default function Button({ textId, type, size, url }) {
         return `${styles.buttonBase} ${styles.smallPurple}`;
       case type === "white" && size === "small":
         return `${styles.buttonBase} ${styles.smallWhite}`;
+      case type === "purpleAccent" && size === "middle":
+        return `${styles.buttonBase} ${styles.middlePurpleAccent}`;
       case type === "purpleAccent" && size === "big":
         return `${styles.buttonBase} ${styles.bigPurpleAccent}`;
       case type === "purple" && size === "big":
