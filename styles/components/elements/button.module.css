@@ -1,6 +1,6 @@
 .buttonBase {
   text-align: center;
-  font-weight: var(--theme_font_weight_bold);
+  font-weight: var(--font_weight_bold);
   text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
@@ -10,29 +10,29 @@
 /************ SMALL ************/
 
 .smallPurpleAccent {
-  background-color: var(--accent_primary);
-  color: var(--theme_white);
-  border: solid 1px var(--accent_primary);
-  font-size: var(--theme_font_size_subpoint);
+  background-color: var(--purple_accent);
+  color: var(--white);
+  border: solid 1px var(--purple_accent);
+  font-size: var(--font_size_subpoint_16);
   width: 240px;
   line-height: 43px;
 }
 
 .smallPurple {
-  background-color: var(--theme_purple);
-  color: var(--theme_white);
+  background-color: var(--purple);
+  color: var(--white);
   border-radius: 20px;
-  border: solid 1px var(--theme_purple);
-  font-size: var(--theme_font_size_subpoint);
+  border: solid 1px var(--purple);
+  font-size: var(--font_size_subpoint_16);
   width: 240px;
   line-height: 43px;
 }
 
 .smallWhite {
-  background-color: var(--theme_white);
-  color: var(--theme_purple);
-  border: solid 1px var(--theme_purple);
-  font-size: var(--theme_font_size_subpoint);
+  background-color: var(--white);
+  color: var(--purple);
+  border: solid 1px var(--purple);
+  font-size: var(--font_size_subpoint_16);
   width: 240px;
   line-height: 43px;
 }
@@ -40,10 +40,10 @@
 /************ MIDDLE ************/
 
 .middlePurpleAccent {
-  background-color: var(--accent_primary);
-  color: var(--theme_white);
-  border: solid 2px var(--accent_primary);
-  font-size: var(--theme_font_size_description);
+  background-color: var(--purple_accent);
+  color: var(--white);
+  border: solid 2px var(--purple_accent);
+  font-size: var(--font_size_description_24);
   padding: 13px 28px;
   line-height: 30px;
 }
@@ -51,29 +51,29 @@
 /************ BIG ************/
 
 .bigPurpleAccent {
-  background-color: var(--accent_primary);
-  color: var(--theme_white);
-  border: solid 2px var(--accent_primary);
-  font-size: var(--theme_font_size_description);
+  background-color: var(--purple_accent);
+  color: var(--white);
+  border: solid 2px var(--purple_accent);
+  font-size: var(--font_size_description_24);
   padding: 28px 38px;
   line-height: 30px;
 }
 
 .bigPurple {
-  background-color: var(--theme_purple);
-  color: var(--theme_white);
+  background-color: var(--purple);
+  color: var(--white);
   border-radius: 40px;
   border: none;
-  font-size: var(--theme_font_size_description);
+  font-size: var(--font_size_description_24);
   padding: 28px 38px;
   line-height: 30px;
 }
 
 .bigWhite {
   background-color: transparent;
-  color: var(--theme_white);
-  border: solid 2px var(--theme_white);
-  font-size: var(--theme_font_size_description);
+  color: var(--white);
+  border: solid 2px var(--white);
+  font-size: var(--font_size_description_24);
   padding: 28px 38px;
   line-height: 30px;
 }
@@ -82,74 +82,74 @@
 
 .smallPurpleAccent:hover {
   border-radius: 20px;
-  background-color: var(--theme_white);
-  border: solid 1px var(--theme_purple);
-  color: var(--theme_purple);
+  background-color: var(--white);
+  border: solid 1px var(--purple);
+  color: var(--purple);
 }
 
 .smallPurpleAccent:active {
-  border: solid 1px var(--theme_purple);
+  border: solid 1px var(--purple);
   border-radius: 20px;
-  background-color: var(--theme_purple);
-  color: var(--theme_white);
+  background-color: var(--purple);
+  color: var(--white);
 }
 
 .smallWhite:hover {
-  border: solid 1px var(--theme_purple);
+  border: solid 1px var(--purple);
   border-radius: 20px;
-  background-color: var(--theme_purple);
-  color: var(--theme_white);
+  background-color: var(--purple);
+  color: var(--white);
 }
 
 .smallWhite:active {
-  border: solid 1px var(--accent_primary);
+  border: solid 1px var(--purple_accent);
   border-radius: 20px;
-  background-color: var(--accent_primary);
-  color: var(--theme_white);
+  background-color: var(--purple_accent);
+  color: var(--white);
 }
 
 /************ MIDDLE HOVER ************/
 
 .middlePurpleAccent:hover {
-  border: solid 2px var(--theme_white);
+  border: solid 2px var(--white);
   border-radius: 40px;
-  background-color: var(--theme_purple);
-  color: var(--theme_white);
+  background-color: var(--purple);
+  color: var(--white);
 }
 
 .middlePurpleAccent:active {
-  border: solid 2px var(--accent_primary);
+  border: solid 2px var(--purple_accent);
   border-radius: 40px;
-  background-color: var(--accent_primary);
-  color: var(--theme_white);
+  background-color: var(--purple_accent);
+  color: var(--white);
 }
 
 /************ BIG HOVER ************/
 
 .bigWhite:hover {
-  border: solid 2px var(--theme_white);
+  border: solid 2px var(--white);
   border-radius: 40px;
-  background-color: var(--theme_purple);
-  color: var(--theme_white);
+  background-color: var(--purple);
+  color: var(--white);
 }
 
 .bigWhite:active {
-  border: solid 2px var(--accent_primary);
+  border: solid 2px var(--purple_accent);
   border-radius: 40px;
-  background-color: var(--accent_primary);
-  color: var(--theme_white);
+  background-color: var(--purple_accent);
+  color: var(--white);
 }
 
 .bigPurpleAccent:hover {
-  border: solid 2px var(--theme_white);
+  border: solid 2px var(--white);
   border-radius: 40px;
-  background-color: var(--theme_purple);
-  color: var(--theme_white);
+  background-color: var(--purple);
+  color: var(--white);
 }
 
 .bigPurpleAccent:active {
-  border: solid 2px var(--accent_primary);
+  border: solid 2px var(--purple_accent);
   border-radius: 40px;
-  background-color: var(--accent_primary);
-  color: var(--theme_white);
+  background-color: var(--purple_accent);
+  color: var(--white);
 }

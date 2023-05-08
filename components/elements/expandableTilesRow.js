@@ -23,11 +23,11 @@ export default function ExpandableTilesRow({ projects }) {
 
   return (
     <div className={styles.contentRow}>
-      {projects.map((project) => {
+      {projects.map((project, i) => {
         return (
           <div
             className={styles.tileContainer}
-            key={project.ID}
+            key={i}
             onClick={() => {
               if (descriptionOpened) {
                 setDescriptionOpened(false);

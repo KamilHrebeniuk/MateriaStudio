@@ -39,5 +39,5 @@ Button.propTypes = {
   textId: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   type: PropTypes.oneOf(["purpleAccent", "purple", "white"]),
-  size: PropTypes.oneOf(["small", "big"]),
+  size: PropTypes.oneOf(["small", "middle", "big"]),
 };

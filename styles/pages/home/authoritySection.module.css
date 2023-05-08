@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--theme_darkgray);
+  background-color: var(--darkgray);
   width: 100%;
   display: flex;
 }
@@ -20,17 +20,17 @@
 
 .title {
   margin-bottom: 40px;
-  font-weight: var(--theme_font_weight_bold);
+  font-weight: var(--font_weight_bold);
   line-height: 60px;
-  font-size: var(--theme_font_size_header);
-  color: var(--theme_white);
+  font-size: var(--font_size_header_48);
+  color: var(--white);
   letter-spacing: 0.01em;
 }
 
 .description {
   font-weight: 300;
-  font-size: var(--theme_font_size_description);
-  color: var(--theme_white);
+  font-size: var(--font_size_description_24);
+  color: var(--white);
   letter-spacing: 0.01em;
   line-height: 32px;
 }

@@ -84,7 +84,42 @@
       "contact": "Kontakt",
       "blog": "Blog",
       "socials": "Społecznościowe",
-      "copyrights": "Wszelkie prawa zastrzeżone - MATERIA studio Patrycja Minecka"
+      "copyrights": "Wszelkie prawa zastrzeżone - MATERIA studio Patrycja Minecka",
+      "form": {
+        "label": {
+          "name": "Twoje imię",
+          "email": "Twój e-mail lub numer telefonu",
+          "topic": "Wybierz, w czym mogę Ci pomóc",
+          "variant": "Wybierz pakiet",
+          "agreement": "Wyrażam zgodę na otrzymywanie informacji o ofercie na podany numer telefonu oraz adres e-mail."
+        },
+        "placeholder": {
+          "name": "Wpisz swoje imię",
+          "email": "Wpisz swój adres e-mail lub numer telefonu",
+          "topic": "-wybierz-",
+          "variant": "-wybierz-"
+        },
+        "options": {
+          "topic": {
+            "1": "Pakiet logo",
+            "2": "Pakiet branding",
+            "3": "Pakiet media",
+            "4": "Pakiet graficzny",
+            "5": "Biologia",
+            "6": "WOS",
+            "7": "Historia",
+            "8": "Język polski",
+            "9": "Język angielski",
+            "10": "Język ukraiński",
+            "11": "Inny język obcy"
+          },
+          "variant": {
+            "1": "Pakiet na start",
+            "2": "Pakiet standard",
+            "3": "Pakiet Od A do Z"
+          }
+        }
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--theme_darkgray);
+  background-color: var(--darkgray);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,9 +12,9 @@
 
 .title {
   margin: 10px auto 43px;
-  font-size: var(--theme_font_size_header);
-  color: var(--theme_darkgray);
-  font-weight: var(--theme_font_weight_bold);
+  font-size: var(--font_size_header_48);
+  color: var(--darkgray);
+  font-weight: var(--font_weight_bold);
 }
 
 .descriptionsContainer {
@@ -29,24 +29,24 @@
 }
 
 .number {
-  font-size: var(--theme_font_size_header);
-  color: var(--theme_white);
-  font-weight: var(--theme_font_weight_bold);
+  font-size: var(--font_size_header_48);
+  color: var(--white);
+  font-weight: var(--font_weight_bold);
   width: 64px;
   display: block;
   line-height: 64px;
-  border-bottom: solid 10px var(--accent_primary);
+  border-bottom: solid 10px var(--purple_accent);
 }
 
 .descriptionHeader {
-  color: var(--theme_white);
+  color: var(--white);
   margin: 12px 0;
-  font-size: var(--theme_font_size_description);
+  font-size: var(--font_size_description_24);
 }
 
 .description {
-  font-size: var(--theme_font_size_subpoint);
-  color: var(--theme_white);
+  font-size: var(--font_size_subpoint_16);
+  color: var(--white);
   line-height: 32px;
   width: 275px;
   margin: 0;

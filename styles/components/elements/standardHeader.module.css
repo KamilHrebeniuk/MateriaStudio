@@ -6,23 +6,23 @@
 
 .subTitle {
   margin: 0;
-  font-size: var(--theme_font_size_description);
-  font-weight: var(--theme_font_weight_bold);
-  color: var(--accent_primary);
+  font-size: var(--font_size_description_24);
+  font-weight: var(--font_weight_bold);
+  color: var(--purple_accent);
   line-height: 30px;
 }
 
 .title {
   margin: 10px 0 7px;
-  font-weight: var(--theme_font_weight_bold);
-  font-size: var(--theme_font_size_header);
-  color: var(--theme_white);
+  font-weight: var(--font_weight_bold);
+  font-size: var(--font_size_header_48);
+  color: var(--white);
   letter-spacing: 0.01em;
 }
 
 .description {
   margin: 0;
-  font-size: var(--theme_font_size_subpoint);
-  font-weight: var(--theme_font_weight_normal);
-  color: var(--theme_white);
+  font-size: var(--font_size_subpoint_16);
+  font-weight: var(--font_weight_normal);
+  color: var(--white);
 }

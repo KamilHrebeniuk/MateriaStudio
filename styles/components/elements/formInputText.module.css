@@ -1,0 +1,22 @@
+.elementContainer {
+  margin-bottom: 33px;
+  width: 100%;
+}
+
+.label {
+  font-size: var(--font_size_subpoint_16);
+  color: rgba(var(--white_rgb), 0.7);
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
+.input {
+  width: 100%;
+  line-height: 17px;
+  border-radius: 20px;
+  padding: 12px 26px;
+  outline: none;
+  border: solid 1px var(--purple_accent);
+  font-size: var(--font_size_subpoint_16);
+  background-color: var(--white);
+}

@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--theme_darkgray);
+  background-color: var(--darkgray);
   width: 100%;
   display: flex;
 }
@@ -18,9 +18,9 @@
 }
 
 .filter {
-  color: var(--theme_white);
+  color: var(--white);
   padding: 10px;
-  background-color: var(--accent_primary);
+  background-color: var(--purple_accent);
   border: 1px solid #fffffc;
   border-radius: 20px;
   cursor: pointer;
@@ -64,10 +64,10 @@
 
 .imageText {
   opacity: 0;
-  color: var(--theme_white);
+  color: var(--white);
   transition-duration: 0.5s;
-  font-size: var(--theme_font_size_description);
-  font-weight: var(--theme_font_weight_bold);
+  font-size: var(--font_size_description_24);
+  font-weight: var(--font_weight_bold);
   width: 280px;
   text-align: center;
 }
@@ -77,7 +77,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: var(--theme_white);
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,7 +87,7 @@
 }
 
 .imageCover:hover {
-  background-color: rgba(var(--accent_primary_rgb), 0.75);
+  background-color: rgba(var(--purple_accent_rgb), 0.75);
 }
 
 .imageCover:hover .imageText {
@@ -100,8 +100,8 @@
 
 .descriptionContainer {
   width: 100%;
-  color: var(--theme_white);
-  font-size: var(--theme_font_size_description);
+  color: var(--white);
+  font-size: var(--font_size_description_24);
   line-height: 60px;
   transition-duration: 0.5s;
 }

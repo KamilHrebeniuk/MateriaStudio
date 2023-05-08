@@ -9,7 +9,7 @@ export default function StandardHeader({
   margins,
 }) {
   return (
-    <div className={margins && styles.container}>
+    <div className={margins ? styles.container : undefined}>
       <h3 className={styles.subTitle}>{__(subTitle)}</h3>
       <h2 className={styles.title}>{__(title)}</h2>
       <span

@@ -1,0 +1,51 @@
+.elementContainer {
+  margin-bottom: 33px;
+  width: 100%;
+}
+
+.labelContainer {
+  font-size: var(--font_size_subpoint_16);
+  color: rgba(var(--white_rgb), 0.7);
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.labelText {
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  background-color: var(--white);
+  border: solid 1px var(--purple_accent);
+  border-radius: 5px;
+  position: relative;
+  margin: auto 20px auto 0;
+}
+
+.checkboxIcon {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 0;
+  top: -2px;
+  display: none;
+}
+
+.input:checked ~ .checkbox > .checkboxIcon {
+  display: block;
+}

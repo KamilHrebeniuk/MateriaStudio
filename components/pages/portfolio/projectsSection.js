@@ -110,11 +110,11 @@ export default function ProjectsSection() {
           >
             {__("pages.portfolio.projectSection.allFilters")}
           </div>
-          {filters.map((item) => {
+          {filters.map((item, i) => {
             return (
               <div
                 className={styles.filter}
-                key={item.ID}
+                key={i}
                 onClick={() =>
                   router.push("/portfolio?filter=" + item.Link, undefined, {
                     shallow: true,

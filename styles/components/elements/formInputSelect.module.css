@@ -1,0 +1,88 @@
+.elementContainer {
+  margin-bottom: 33px;
+  width: 100%;
+}
+
+.label {
+  font-size: var(--font_size_subpoint_16);
+  color: rgba(var(--white_rgb), 0.7);
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
+.inputContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  line-height: 17px;
+  border-radius: 20px;
+  padding: 12px 26px;
+  outline: none;
+  border: solid 1px var(--purple_accent);
+  font-size: var(--font_size_subpoint_16);
+  background-color: var(--white);
+}
+
+.inputImage {
+  position: absolute;
+  top: 18px;
+  right: 26px;
+  transition-duration: 0.5s;
+}
+
+.inputImageOpen {
+  transform: scaleY(-1);
+}
+
+.inputImageClosed {
+  transform: scaleY(1);
+}
+
+.input::placeholder {
+  color: var(--lightgray);
+}
+
+.optionsContainer {
+  width: 100%;
+  border-radius: 20px;
+  border: solid 1px var(--purple_accent);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.optionsContainerOpen {
+  margin-top: 20px;
+  padding: 12px 26px;
+  opacity: 1;
+}
+
+.optionsContainerClosed {
+  padding: 0 26px;
+  margin-top: 0;
+  opacity: 0;
+}
+
+.optionsOption {
+  line-height: 27px;
+  display: inline-block;
+  font-size: var(--font_size_subpoint_16);
+  border-bottom: solid 1px var(--lightgray);
+  margin-bottom: 3px;
+  color: var(--lightgray);
+}
+
+.optionsOption:last-of-type {
+  border: none;
+  margin-bottom: 0;
+}
+
+.optionsOption:hover {
+  color: var(--darkgray);
+  cursor: pointer;
+}

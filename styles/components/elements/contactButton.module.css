@@ -1,6 +1,6 @@
 .container {
-  background-color: var(--theme_purple);
-  border: 1px solid var(--accent_primary);
+  background-color: var(--purple);
+  border: 1px solid var(--purple_accent);
   border-radius: 20px;
   padding: 30px;
   line-height: 20px;
@@ -13,6 +13,6 @@
 }
 
 .text {
-  color: var(--theme_white);
-  font-size: var(--theme_font_size_subpoint);
+  color: var(--white);
+  font-size: var(--font_size_subpoint_16);
 }

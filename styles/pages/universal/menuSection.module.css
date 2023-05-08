@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--theme_darkgray);
+  background-color: var(--darkgray);
   width: 100%;
   height: 130px;
 }
@@ -15,7 +15,7 @@
 
 .logoContainer {
   width: 233px;
-  border-right: solid 1px rgba(var(--theme_white_rgb), 0.25);
+  border-right: solid 1px rgba(var(--white_rgb), 0.25);
 }
 
 .logoImage {
@@ -40,13 +40,13 @@
 }
 
 .pagesLink {
-  color: var(--theme_white);
+  color: var(--white);
   text-transform: uppercase;
   padding: 10px;
-  border-bottom: solid 2px var(--theme_darkgray);
+  border-bottom: solid 2px var(--darkgray);
 }
 
 .pagesLink:hover {
   transition-duration: 0.5s;
-  border-bottom: solid 2px var(--theme_white);
+  border-bottom: solid 2px var(--white);
 }
