@@ -39,10 +39,10 @@
         "title": "Oferta",
         "description": "Zapoznaj się z całą ofertą i wybierz rozwiązanie pasujące do Ciebie!",
         "button": "Sprawdź cennik",
-        "graphicHeart": "Pakiet graficzny",
+        "graphicHeart": "Pakiet media",
         "graphicPerson": "Pakiet logo",
-        "graphicCart": "Pakiet dla firm",
-        "graphicStar": "Pakiet 3D",
+        "graphicBrush": "Pakiet godzin",
+        "graphicStar": "Pakiet branding",
         "moreInformation": "Dowiedz się więcej"
       },
       "scheduleSection": {
@@ -76,6 +76,69 @@
         "allFilters": "WSZYSTKIE"
       }
     },
+    "offer": {
+      "headerSection": {
+        "title": "Cennik"
+      },
+      "offerSection": {
+        "subTitle": "Oszczędzasz czas i pieniądze",
+        "title": "Wybierz pakiet graficzny dla siebie!",
+        "description": "Kliknij i dowiedz się więcej.",
+        "extraDescription": "Jako grafik komputerowy specjalizuję się w projektowaniu i tworzeniu wyjątkowych projektów graficznych, które pomagają firmom wyróżnić się na rynku i przyciągnąć uwagę klientów. Moja oferta obejmuje szeroki zakres usług, w tym projektowanie grafik reklamowych, identyfikacji wizualnej czy projektów do druku. Stawiam na staranność, estetykę i funkcjonalność moich projektów. Aby ułatwić Ci wybór idealnego zakresu usług graficznych, przygotowałam cztery pakiety, które pozwolą Ci zaoszczędzić zarówno czas, jak i pieniądze."
+      },
+      "detailedOfferSection": {
+        "subTitle": "Podane ceny dotyczą tylko projektów, nie drukuję materiałów.",
+        "title": "Sprawdź pozostałe opcje",
+        "description": "",
+        "option1": "monogram (logo z inicjałów)",
+        "price1": "450 zł",
+        "option2": "wizytówka",
+        "price2": "250 zł",
+        "option3": "papier firmowy",
+        "price3": "100 zł",
+        "option4": "ulotka jednostronna",
+        "price4": "250 zł",
+        "option5": "ulotka dwustronna",
+        "price5": "450 zł",
+        "option6": "social media post",
+        "price6": "50 zł",
+        "option7": "baner",
+        "price7": "200 zł",
+        "option8": "ebook (minimum 20 stron)",
+        "price8": "15 zł/str",
+        "option9": "katalog",
+        "price9": "50 zł/str",
+        "option10": "szablon prezentacji",
+        "price10": "od 350 zł",
+        "option11": "Nie widzisz nic dla siebie? Napisz do mnie!",
+        "price11": ""
+      },
+      "logo": {
+        "headerSection": {
+          "title": "Pakiet logo"
+        },
+        "offerSection": {
+          "subTitle": "Wybierz pakiet i przekonaj się, że warto!",
+          "title": "Sprawdź inne pakiety:",
+          "description": "Kliknij i dowiedz się więcej."
+        },
+        "offerDescriptionSection": {
+          "title": "Wybierz wersję dla siebie",
+          "subTitle": "Oszczędzasz czas i pieniądze",
+          "description": "Pakiet logo to idealne rozwiązanie dla firm poszukujących spójnego wizerunku w internecie. W skład takiego pakietu wchodzi kompleksowe projektowanie logotypu oraz różnorodne wersje graficzne, dostosowane do różnych mediów. Dzięki temu logo będzie wyglądać doskonale zarówno na stronie internetowej, jak i w materiałach drukowanych czy reklamach. Wybierz pakiet logo i wyróżnij się na rynku, przyciągając uwagę swoich klientów."
+        }
+      }
+    },
+    "contact": {
+      "headerSection": {
+        "title": "Kontakt"
+      }
+    },
+    "blog": {
+      "headerSection": {
+        "title": "Blog"
+      }
+    },
     "universal": {
       "pagesTitle": "Strony",
       "homepage": "Home",
@@ -105,13 +168,7 @@
             "2": "Pakiet branding",
             "3": "Pakiet media",
             "4": "Pakiet graficzny",
-            "5": "Biologia",
-            "6": "WOS",
-            "7": "Historia",
-            "8": "Język polski",
-            "9": "Język angielski",
-            "10": "Język ukraiński",
-            "11": "Inny język obcy"
+            "5": "Pojedyncza usługa"
           },
           "variant": {
             "1": "Pakiet na start",

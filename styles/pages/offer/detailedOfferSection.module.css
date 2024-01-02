@@ -1,0 +1,43 @@
+.container {
+  background-color: var(--darkgray);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.content {
+  margin: auto;
+  width: 1200px;
+}
+
+.optionsContainer {
+  margin-top: -30px;
+}
+
+.optionContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 61px;
+  font-size: var(--font_size_description_24);
+  color: var(--white);
+  align-items: flex-end;
+}
+
+.optionTitle {
+  width: fit-content;
+  padding-right: 30px;
+}
+
+.optionSpacing {
+  flex-grow: 1;
+  border-bottom: solid 2px var(--white);
+  position: relative;
+  bottom: 2px;
+}
+
+.optionPrice {
+  width: fit-content;
+  padding-left: 30px;
+}

@@ -41,26 +41,20 @@ export default function ContactSection() {
                 "pages.universal.form.options.topic.3",
                 "pages.universal.form.options.topic.4",
                 "pages.universal.form.options.topic.5",
-                "pages.universal.form.options.topic.6",
-                "pages.universal.form.options.topic.7",
-                "pages.universal.form.options.topic.8",
-                "pages.universal.form.options.topic.9",
-                "pages.universal.form.options.topic.10",
-                "pages.universal.form.options.topic.11",
               ]}
               isRequired={true}
             />
-            <FormInputSelect
-              elementName={"variant"}
-              labelId={"pages.universal.form.label.variant"}
-              placeholderId={"pages.universal.form.placeholder.variant"}
-              optionsIds={[
-                "pages.universal.form.options.variant.1",
-                "pages.universal.form.options.variant.2",
-                "pages.universal.form.options.variant.3",
-              ]}
-              isRequired={true}
-            />
+            {/*<FormInputSelect*/}
+            {/*  elementName={"variant"}*/}
+            {/*  labelId={"pages.universal.form.label.variant"}*/}
+            {/*  placeholderId={"pages.universal.form.placeholder.variant"}*/}
+            {/*  optionsIds={[*/}
+            {/*    "pages.universal.form.options.variant.1",*/}
+            {/*    "pages.universal.form.options.variant.2",*/}
+            {/*    "pages.universal.form.options.variant.3",*/}
+            {/*  ]}*/}
+            {/*  isRequired={true}*/}
+            {/*/>*/}
             <FormInputCheckbox
               elementName={"agreement"}
               labelId={"pages.universal.form.label.agreement"}
