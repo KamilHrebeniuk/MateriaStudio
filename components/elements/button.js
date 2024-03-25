@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import styles from "/styles/components/elements/button.module.css";
 import Link from "next/link";
 
-export default function Button({ textId, type, size, url }) {
+// eslint-disable-next-line
+export default function Button({ textId, type, size, url, scroll, isSubmit }) {
   const myStyle = () => {
     switch (true) {
       case type === "purpleAccent" && size === "small":
@@ -23,8 +24,16 @@ export default function Button({ textId, type, size, url }) {
     }
   };
 
+  if (isSubmit) {
+    return (
+      <button className={myStyle()} type={"submit"}>
+        {__(textId)}
+      </button>
+    );
+  }
+
   return (
-    <Link href={url} className={myStyle()}>
+    <Link className={myStyle()} href={url} scroll={false}>
       {__(textId)}
     </Link>
   );
@@ -33,6 +42,8 @@ export default function Button({ textId, type, size, url }) {
 Button.defaultProps = {
   type: "white",
   size: "big",
+  scroll: false,
+  isSubmit: false,
 };
 
 Button.propTypes = {
@@ -40,4 +51,6 @@ Button.propTypes = {
   url: PropTypes.string.isRequired,
   type: PropTypes.oneOf(["purpleAccent", "purple", "white"]),
   size: PropTypes.oneOf(["small", "middle", "big"]),
+  scroll: PropTypes.bool,
+  isSubmit: PropTypes.bool,
 };

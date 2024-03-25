@@ -11,8 +11,11 @@
 
   --font_size_megasuperplus_64: 64px;
   --font_size_header_48: 48px;
+  --font_size_header_mobile_36: 36px;
   --font_size_description_24: 24px;
+  --font_size_description_mobile_18: 18px;
   --font_size_subpoint_16: 16px;
+  --font_size_subpoint_mobile_14: 14px;
 
   --font_weight_super_bold: 900;
   --font_weight_bold: 700;

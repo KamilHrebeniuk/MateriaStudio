@@ -21,10 +21,48 @@
 .graphicsLink {
   width: 380px;
   height: 380px;
-  background-color: darkorange;
 }
 
 .buttonContainer {
   text-align: center;
   margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .content {
+    width: calc(100% - 60px);
+  }
+
+  .graphicsContainer {
+    width: 100%;
+  }
+
+  .graphicsLink {
+    width: calc(33.33% - 10px);
+    height: auto;
+  }
+
+  .buttonContainer {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .graphicsContainer {
+    flex-direction: column;
+  }
+
+  .graphicsLink {
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto auto;
+  }
+
+  .graphicsLink:first-of-type {
+    margin-top: 0;
+  }
 }

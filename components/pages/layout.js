@@ -2,8 +2,14 @@ import PropTypes from "prop-types";
 import Head from "next/head";
 import FooterSection from "./universal/footerSection";
 import MenuSection from "./universal/menuSection";
+import keepAlive from "/utils/auth/keepAlive";
+import { useContext } from "react";
+import AppContext from "/context/AppContext";
 
 export default function Layout({ children }) {
+  const context = useContext(AppContext);
+  keepAlive(context.token, context.setToken);
+
   return (
     <>
       <Head>

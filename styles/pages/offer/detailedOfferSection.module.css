@@ -41,3 +41,33 @@
   width: fit-content;
   padding-left: 30px;
 }
+
+@media only screen and (max-width: 1279px) {
+  .container {
+    padding: 0 60px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .optionContainer {
+    height: 32px;
+  }
+
+  .optionTitle {
+    padding-right: 5px;
+    font-size: var(--font_size_subpoint_16);
+  }
+
+  .optionPrice {
+    padding-left: 5px;
+    font-size: var(--font_size_subpoint_16);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 30px;
+  }
+}

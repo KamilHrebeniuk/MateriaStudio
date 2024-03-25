@@ -50,3 +50,13 @@
   transition-duration: 0.5s;
   border-bottom: solid 2px var(--white);
 }
+
+@media only screen and (max-width: 1279px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .content {
+    width: calc(100% - 60px);
+  }
+}

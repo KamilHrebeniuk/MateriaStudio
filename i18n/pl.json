@@ -126,6 +126,63 @@
           "title": "Wybierz wersję dla siebie",
           "subTitle": "Oszczędzasz czas i pieniądze",
           "description": "Pakiet logo to idealne rozwiązanie dla firm poszukujących spójnego wizerunku w internecie. W skład takiego pakietu wchodzi kompleksowe projektowanie logotypu oraz różnorodne wersje graficzne, dostosowane do różnych mediów. Dzięki temu logo będzie wyglądać doskonale zarówno na stronie internetowej, jak i w materiałach drukowanych czy reklamach. Wybierz pakiet logo i wyróżnij się na rynku, przyciągając uwagę swoich klientów."
+        },
+        "offerPricingSection": {
+          "start": "Startujemy!"
+        }
+      },
+      "branding": {
+        "headerSection": {
+          "title": "Pakiet branding"
+        },
+        "offerSection": {
+          "subTitle": "Wybierz pakiet i przekonaj się, że warto!",
+          "title": "Sprawdź inne pakiety:",
+          "description": "Kliknij i dowiedz się więcej."
+        },
+        "offerDescriptionSection": {
+          "title": "Wybierz wersję dla siebie",
+          "subTitle": "Oszczędzasz czas i pieniądze",
+          "description": "Pakiet branding to kompleksowe podejście do wizerunku Twojej firmy. W jego skład wchodzi projektowanie logotypu, wybór kolorów, czcionek oraz innych elementów graficznych, które składają się na spójny i rozpoznawalny wizerunek marki. Dzięki takiej identyfikacji wizualnej Twoja firma zyska unikalny charakter i łatwo będzie zapadać w pamięć klientów. Wybierz pakiet branding i zyskaj wyróżniający się wizerunek wśród konkurencji."
+        },
+        "offerPricingSection": {
+          "start": "Startujemy!"
+        }
+      },
+      "media": {
+        "headerSection": {
+          "title": "Pakiet media"
+        },
+        "offerSection": {
+          "subTitle": "Wybierz pakiet i przekonaj się, że warto!",
+          "title": "Sprawdź inne pakiety:",
+          "description": "Kliknij i dowiedz się więcej."
+        },
+        "offerDescriptionSection": {
+          "title": "Wybierz wersję dla siebie",
+          "subTitle": "Oszczędzasz czas i pieniądze",
+          "description": "Pakiet media to kompleksowe podejście do promocji Twojej firmy w mediach społecznościowych. Dzięki temu Twoja firma będzie widoczna dla szerszej grupy odbiorców, zwiększając tym samym liczbę potencjalnych klientów. Wybierz pakiet media i zyskaj skuteczną promocję w mediach społecznościowych, dzięki której Twoja firma stanie się bardziej rozpoznawalna."
+        },
+        "offerPricingSection": {
+          "start": "Startujemy!"
+        }
+      },
+      "hours": {
+        "headerSection": {
+          "title": "Pakiet godzin"
+        },
+        "offerSection": {
+          "subTitle": "Wybierz pakiet i przekonaj się, że warto!",
+          "title": "Sprawdź inne pakiety:",
+          "description": "Kliknij i dowiedz się więcej."
+        },
+        "offerDescriptionSection": {
+          "title": "Wybierz wersję dla siebie",
+          "subTitle": "Oszczędzasz czas i pieniądze",
+          "description": "Pakiet godzin to elastyczne rozwiązanie dla firm, które potrzebują stałej pomocy grafika w tworzeniu różnych materiałów reklamowych. W skład tego pakietu wchodzą godziny pracy grafika, które można wykorzystać na projekty graficzne związane z identyfikacją wizualną firmy, tworzeniem materiałów promocyjnych, czy grafikami na potrzeby mediów społecznościowych. Dzięki temu możesz mieć pewność, że zawsze masz dostęp do mojej pomocy, kiedy tylko tego potrzebujesz. Wybierz pakiet graficzny i zyskaj elastyczne wsparcie w tworzeniu wizerunku Twojej firmy."
+        },
+        "offerPricingSection": {
+          "start": "Startujemy!"
         }
       }
     },
@@ -151,14 +208,14 @@
       "form": {
         "label": {
           "name": "Twoje imię",
-          "email": "Twój e-mail lub numer telefonu",
+          "phone": "Twój e-mail lub numer telefonu",
           "topic": "Wybierz, w czym mogę Ci pomóc",
           "variant": "Wybierz pakiet",
           "agreement": "Wyrażam zgodę na otrzymywanie informacji o ofercie na podany numer telefonu oraz adres e-mail."
         },
         "placeholder": {
           "name": "Wpisz swoje imię",
-          "email": "Wpisz swój adres e-mail lub numer telefonu",
+          "phone": "Wpisz swój adres e-mail lub numer telefonu",
           "topic": "-wybierz-",
           "variant": "-wybierz-"
         },

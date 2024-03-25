@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: "basic-sans", sans-serif;
   letter-spacing: 0.01em;
+  scroll-behavior: smooth;
 }
 
 a {

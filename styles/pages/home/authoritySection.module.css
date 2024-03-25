@@ -44,3 +44,44 @@
 .startButton {
   margin-top: 40px;
 }
+
+@media only screen and (max-width: 1279px) {
+  .container {
+    padding: 0 60px;
+  }
+
+  .descriptionContainer {
+    width: 60%;
+  }
+
+  .title {
+    font-size: var(--font_size_description_24);
+    line-height: 32px;
+  }
+
+  .description {
+    font-size: var(--font_size_subpoint_16);
+    line-height: var(--font_size_description_24);
+  }
+
+  .image {
+    width: calc(40% - 120px);
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .descriptionContainer {
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 260px;
+    margin: 40px auto 0;
+  }
+}

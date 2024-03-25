@@ -17,3 +17,25 @@
   width: 964px;
   margin: 0 auto 100px;
 }
+
+@media only screen and (max-width: 1279px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .content {
+    width: calc(100% - 60px);
+  }
+
+  .buttonsContainer {
+    width: 100%;
+    margin: 0 auto 40px;
+    max-width: 960px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .buttonsContainer {
+    flex-wrap: wrap;
+  }
+}

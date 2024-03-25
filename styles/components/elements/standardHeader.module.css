@@ -26,3 +26,23 @@
   font-weight: var(--font_weight_normal);
   color: var(--white);
 }
+
+@media only screen and (max-width: 1279px) {
+  .container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .subTitle {
+    font-size: var(--font_size_subpoint_16);
+  }
+
+  .title {
+    margin: 0;
+    font-size: var(--font_size_description_24);
+  }
+
+  .description {
+    font-size: var(--font_size_subpoint_mobile_14);
+  }
+}

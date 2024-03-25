@@ -153,3 +153,14 @@
   background-color: var(--purple_accent);
   color: var(--white);
 }
+
+@media only screen and (max-width: 1279px) {
+  /************ BIG ************/
+
+  .bigPurpleAccent,
+  .bigWhite {
+    font-size: var(--font_size_subpoint_16);
+    padding: 15px 25px;
+    line-height: 20px;
+  }
+}

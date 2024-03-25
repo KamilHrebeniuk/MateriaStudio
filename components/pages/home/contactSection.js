@@ -4,10 +4,65 @@ import FormInputText from "../../elements/formInputText";
 import FormInputSelect from "../../elements/formInputSelect";
 import FormInputCheckbox from "../../elements/formInputCheckbox";
 import __ from "/utils/lang/translate";
+import { useContext, useState } from "react";
+import AppContext from "/context/AppContext";
+import Button from "/components/elements/button";
 
 export default function ContactSection() {
+  const [name, setName] = useState();
+  const [phone, setPhone] = useState();
+  const [offerAgreement, setOfferAgreement] = useState();
+  const [rulesAgreement, setRulesAgreement] = useState();
+  const appContext = useContext(AppContext);
+
+  const submitContact = (event) => {
+    event.preventDefault();
+
+    setOfferAgreement("on");
+    setRulesAgreement("on");
+
+    fetch("http://qfgcdwu.cluster027.hosting.ovh.net/api/contact.php", {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: name,
+        phone: phone,
+        offer_agreement: offerAgreement,
+        rules_agreement: rulesAgreement,
+        token: appContext.token,
+      }),
+    })
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          switch (result.status) {
+            case "Ok":
+              alert(
+                "Dziękujemy za Twoje zgłoszenie! Nasz zespół skontaktuje się z Tobą telefonicznie w ciągu 24h."
+              );
+              break;
+            case "Too quick":
+              alert(
+                "Błąd - zbyt wiele wypełnień formularza w zbyt krótkim czasie."
+              );
+              break;
+            case "Too many actions":
+              alert("Błąd - zbyt wiele wypełnień formularza.");
+              break;
+            case "Old session":
+              alert("Błąd - odśwież stronę i spróbuj ponownie.");
+              break;
+          }
+        },
+        (error) => {
+          console.log(error);
+          alert(__("pages.universal.form.oldSession"));
+        }
+      );
+  };
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="contact">
       <div className={styles.content}>
         <div className={styles.contactFormContainer}>
           <StandardHeader
@@ -16,20 +71,23 @@ export default function ContactSection() {
           />
           <form
             className={styles.contactFormFormContainer}
-            action={"http://qfgcdwu.cluster027.hosting.ovh.net/api/contact.php"}
-            method={"post"}
+            onSubmit={submitContact}
           >
             <FormInputText
               elementName={"name"}
               labelId={"pages.universal.form.label.name"}
               placeholderId={"pages.universal.form.placeholder.name"}
               isRequired={true}
+              type={"text"}
+              eventHandler={setName}
             />
             <FormInputText
-              elementName={"email"}
-              labelId={"pages.universal.form.label.email"}
-              placeholderId={"pages.universal.form.placeholder.email"}
+              elementName={"phone"}
+              labelId={"pages.universal.form.label.phone"}
+              placeholderId={"pages.universal.form.placeholder.phone"}
               isRequired={true}
+              type={"phone"}
+              eventHandler={setPhone}
             />
             <FormInputSelect
               elementName={"topic"}
@@ -60,9 +118,18 @@ export default function ContactSection() {
               labelId={"pages.universal.form.label.agreement"}
               isRequired={true}
             />
-            <button type={"submit"} className={styles.contactFormSubmit}>
-              {__("pages.home.contactSection.button")}
-            </button>
+            <div className={styles.contactFormSubmit}>
+              <Button
+                textId={"pages.universal.form.inputSubmit"}
+                url={"#"}
+                styleType={"purpleAccent"}
+                type={"small"}
+                isSubmit
+              />
+            </div>
+            {/*<button type={"submit"} className={styles.contactFormSubmit}>*/}
+            {/*  {__("pages.home.contactSection.button")}*/}
+            {/*</button>*/}
           </form>
         </div>
         <div className={styles.contactContactContainer}></div>

@@ -35,6 +35,7 @@ export default function OfferSection({
           </div>
         )}
         <div className={styles.graphicsContainer}>
+          {/*<div className={styles.graphicsContainerRow}>*/}
           <FlippingTile
             url={"/offer/logo"}
             srcPurple={personPurple}
@@ -49,6 +50,8 @@ export default function OfferSection({
             textPurple={"pages.home.offerSection.graphicStar"}
             textWhite={"pages.home.offerSection.moreInformation"}
           />
+          {/*</div>*/}
+          {/*<div className={styles.graphicsContainerRow}>*/}
           <FlippingTile
             url={"/offer/media"}
             srcPurple={heartPurple}
@@ -63,6 +66,7 @@ export default function OfferSection({
             textPurple={"pages.home.offerSection.graphicBrush"}
             textWhite={"pages.home.offerSection.moreInformation"}
           />
+          {/*</div>*/}
         </div>
         {showButton && (
           <div className={styles.buttonContainer}>

@@ -39,9 +39,9 @@ export default function MenuSection() {
           <Link className={styles.pagesLink} href={url.contactPage}>
             {__("pages.universal.contact")}
           </Link>
-          <Link className={styles.pagesLink} href={url.blogPage}>
-            {__("pages.universal.blog")}
-          </Link>
+          {/*<Link className={styles.pagesLink} href={url.blogPage}>*/}
+          {/*  {__("pages.universal.blog")}*/}
+          {/*</Link>*/}
         </div>
       </div>
     </nav>

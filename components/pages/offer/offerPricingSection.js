@@ -1,6 +1,7 @@
 import styles from "/styles/pages/offer/offerPricingSection.module.css";
 import PropTypes from "prop-types";
 import __ from "/utils/lang/translate";
+import Button from "/components/elements/button";
 
 export default function OfferPricingSection({
   columnHeaders,
@@ -19,11 +20,17 @@ export default function OfferPricingSection({
               {columnContents[index].map((columnContent, innerIndex) => {
                 return (
                   <div className={styles.columnRow} key={innerIndex}>
-                    {" "}
                     {__(columnContent)}
                   </div>
                 );
               })}
+              <Button
+                textId={"pages.offer.logo.offerPricingSection.start"}
+                url={"#contact"}
+                type={"purpleAccent"}
+                size={"small"}
+                scroll={false}
+              />
             </div>
           );
         })}
