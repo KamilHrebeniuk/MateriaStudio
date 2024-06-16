@@ -3,12 +3,20 @@ import Head from "next/head";
 import FooterSection from "./universal/footerSection";
 import MenuSection from "./universal/menuSection";
 import keepAlive from "/utils/auth/keepAlive";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import AppContext from "/context/AppContext";
+import styles from "/styles/pages/universal/layout.module.css";
 
 export default function Layout({ children }) {
   const context = useContext(AppContext);
   keepAlive(context.token, context.setToken);
+  const mainStyle = context.changing
+    ? `${styles.layout} ${styles.layoutChanging}`
+    : `${styles.layout} ${styles.layoutStatic}`;
+
+  useEffect(() => {
+    context.setChanging(false);
+  }, []);
 
   return (
     <>
@@ -18,7 +26,7 @@ export default function Layout({ children }) {
         <meta name="robots" content="noindex" />
       </Head>
       <MenuSection />
-      <main>{children}</main>
+      <main className={mainStyle}>{children}</main>
       <FooterSection />
     </>
   );

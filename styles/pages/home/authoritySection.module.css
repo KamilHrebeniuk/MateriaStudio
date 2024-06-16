@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .descriptionContainer {
@@ -52,6 +53,8 @@
 
   .descriptionContainer {
     width: 60%;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .title {
@@ -67,16 +70,23 @@
   .image {
     width: calc(40% - 120px);
     height: auto;
+    margin-top: 60px;
+    min-width: 240px;
   }
 }
 
 @media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 30px;
+  }
+
   .content {
     flex-direction: column;
   }
 
   .descriptionContainer {
     width: 100%;
+    margin-bottom: 0;
   }
 
   .image {

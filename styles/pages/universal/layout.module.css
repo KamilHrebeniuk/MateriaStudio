@@ -1,0 +1,11 @@
+.layout {
+  transition-duration: 0.5s;
+}
+
+.layoutStatic {
+  opacity: 1;
+}
+
+.layoutChanging {
+  opacity: 0;
+}

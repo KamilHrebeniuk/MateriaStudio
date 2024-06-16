@@ -29,7 +29,7 @@ export default function OfferPricingSection({
                 url={"#contact"}
                 type={"purpleAccent"}
                 size={"small"}
-                scroll={false}
+                scroll={true}
               />
             </div>
           );

@@ -2,9 +2,16 @@ import __ from "../../utils/lang/translate";
 import PropTypes from "prop-types";
 import styles from "/styles/components/elements/button.module.css";
 import Link from "next/link";
+import delayedClick from "/utils/routing/delayRedirect";
+import { useContext } from "react";
+import AppContext from "/context/AppContext";
+import { useRouter } from "next/router";
 
 // eslint-disable-next-line
 export default function Button({ textId, type, size, url, scroll, isSubmit }) {
+  const context = useContext(AppContext);
+  const router = useRouter();
+
   const myStyle = () => {
     switch (true) {
       case type === "purpleAccent" && size === "small":
@@ -32,8 +39,20 @@ export default function Button({ textId, type, size, url, scroll, isSubmit }) {
     );
   }
 
+  if (scroll) {
+    return (
+      <Link className={myStyle()} href={url} scroll={scroll}>
+        {__(textId)}
+      </Link>
+    );
+  }
+
   return (
-    <Link className={myStyle()} href={url} scroll={false}>
+    <Link
+      className={myStyle()}
+      href={url}
+      onClick={(event) => delayedClick(context, router, event)}
+    >
       {__(textId)}
     </Link>
   );

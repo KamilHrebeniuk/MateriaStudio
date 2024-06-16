@@ -4,6 +4,10 @@ import styles from "/styles/components/elements/flippingTile.module.css";
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import delayedClick from "/utils/routing/delayRedirect";
+import { useContext } from "react";
+import AppContext from "/context/AppContext";
+import { useRouter } from "next/router";
 
 export default function FlippingTile({
   url,
@@ -28,39 +32,36 @@ export default function FlippingTile({
     }, 500);
   };
 
+  const context = useContext(AppContext);
+  const router = useRouter();
+
   const graphicsVariant = () => {
     switch (state) {
       case 0:
         return (
-          <Link href={url} className={styles.graphicsLink}>
+          <div className={styles.graphicsLink}>
             <Image
               className={styles.graphic}
               src={srcPurple}
               alt={__(textPurple)}
             />
             <span className={styles.graphicsDescription}>{__(textPurple)}</span>
-          </Link>
+          </div>
         );
       case 1:
         return (
-          <Link
-            href={url}
-            className={`${styles.graphicsLink} ${styles.graphicsLinkHover}`}
-          >
+          <div className={`${styles.graphicsLink} ${styles.graphicsLinkHover}`}>
             <Image
               className={styles.graphic}
               src={srcPurple}
               alt={__(textPurple)}
             />
             <span className={styles.graphicsDescription}>{__(textPurple)}</span>
-          </Link>
+          </div>
         );
       case 2:
         return (
-          <Link
-            href={url}
-            className={`${styles.graphicsLink} ${styles.graphicsLinkNew}`}
-          >
+          <div className={`${styles.graphicsLink} ${styles.graphicsLinkNew}`}>
             <Image
               className={styles.graphicNew}
               src={srcWhite}
@@ -69,12 +70,11 @@ export default function FlippingTile({
             <span className={styles.graphicsDescriptionNew}>
               {__(textWhite)}
             </span>
-          </Link>
+          </div>
         );
       case 3:
         return (
-          <Link
-            href={url}
+          <div
             className={`${styles.graphicsLink} ${styles.graphicsLinkNewHover}`}
           >
             <Image
@@ -85,7 +85,7 @@ export default function FlippingTile({
             <span className={styles.graphicsDescriptionNew}>
               {__(textWhite)}
             </span>
-          </Link>
+          </div>
         );
     }
   };
@@ -96,7 +96,16 @@ export default function FlippingTile({
       onMouseEnter={() => mouseEnter()}
       onMouseLeave={() => mouseLeaves()}
     >
-      {graphicsVariant()}
+      <Link
+        href={url}
+        onClick={(event) => {
+          delayedClick(context, router, event);
+        }}
+      >
+        <div className={styles.graphicsPointerEventsBlocker}>
+          {graphicsVariant()}
+        </div>
+      </Link>
     </div>
   );
 }

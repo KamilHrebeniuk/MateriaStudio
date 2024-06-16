@@ -1,6 +1,6 @@
 export default function keepAlive(token, setToken) {
   function keepAliveInterval() {
-    fetch("http://qfgcdwu.cluster027.hosting.ovh.net/api/token_generator.php", {
+    fetch("//materiastudio.design/api/token_generator.php", {
       method: "post",
       headers: { "Content-Type": "application/json" },
     })

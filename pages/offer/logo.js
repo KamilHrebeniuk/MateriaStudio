@@ -1,4 +1,3 @@
-import Layout from "/components/pages/layout";
 import HeaderSection from "/components/pages/universal/headerSection";
 import ContactSection from "/components/pages/home/contactSection";
 import OfferDescriptionSection from "/components/pages/offer/offerDescriptionSection";
@@ -8,7 +7,7 @@ import OfferPricingSection from "/components/pages/offer/offerPricingSection";
 
 export default function App() {
   return (
-    <Layout>
+    <>
       <HeaderSection title={"pages.offer.logo.headerSection.title"} />
       <OfferDescriptionSection
         title={"pages.offer.logo.offerDescriptionSection.title"}
@@ -50,6 +49,6 @@ export default function App() {
         description={"pages.offer.logo.offerSection.description"}
       />
       <ContactSection />
-    </Layout>
+    </>
   );
 }

@@ -10,12 +10,7 @@ session_id($data['token']);
 session_start();
 
 // Transform values
-$offer_agreement = 0;
 $rules_agreement = 0;
-
-if ($data['offer_agreement'] === 'on'){
-    $offer_agreement = 1;
-}
 
 if ($data['rules_agreement'] === 'on'){
     $rules_agreement = 1;
@@ -51,14 +46,14 @@ try {
             if ($_SESSION['last_active'] < time() - 10) {
                 $_SESSION['last_active'] = time();
 
-                $stmt = $conn->prepare("INSERT INTO contact_form (Name, NameEnvelope, Phone, PhoneEnvelope, OfferAgreement, RulesAgreement) VALUES (:name, :nameEnvelope, :phone, :phoneEnvelope, :offer_agreement, :rules_agreement)");
-                $stmt->execute(['name' => $sealedName, 'nameEnvelope' => $envelopeName, 'phone' => $sealedPhone, 'phoneEnvelope' => $envelopePhone, 'offer_agreement' => $offer_agreement, 'rules_agreement' => $rules_agreement]);
+                $stmt = $conn->prepare("INSERT INTO contact_form (Name, NameEnvelope, Phone, PhoneEnvelope, RulesAgreement) VALUES (:name, :nameEnvelope, :phone, :phoneEnvelope, :rules_agreement)");
+                $stmt->execute(['name' => $sealedName, 'nameEnvelope' => $envelopeName, 'phone' => $sealedPhone, 'phoneEnvelope' => $envelopePhone, 'rules_agreement' => $rules_agreement]);
 
                 $stmt->closeCursor();
 
                 $status = "Ok";
 
-                // Send mail to Omindu
+                // Send mail to Materia
                 if(!send_contact_mail_materia($data['name'], $data['phone'])){
                     $status = "Error2";
                 }

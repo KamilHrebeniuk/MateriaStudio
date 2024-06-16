@@ -82,9 +82,9 @@
 
 .smallPurpleAccent:hover {
   border-radius: 20px;
-  background-color: var(--white);
-  border: solid 1px var(--purple);
-  color: var(--purple);
+  border: solid 2px var(--white);
+  background-color: var(--purple);
+  color: var(--white);
 }
 
 .smallPurpleAccent:active {

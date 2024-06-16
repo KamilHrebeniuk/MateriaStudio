@@ -45,6 +45,24 @@
         "graphicStar": "Pakiet branding",
         "moreInformation": "Dowiedz się więcej"
       },
+      "opinionsSection": {
+        "subTitle": "Zobacz, jak się ze mną pracuje!",
+        "title": "Opinie klientów",
+        "tileNames": {
+          "name1": "Imie jeden",
+          "name2": "Imie dwa",
+          "name3": "Imie trzy",
+          "name4": "Imie cztery",
+          "name5": "Imie pięć"
+        },
+        "tileDescriptions": {
+          "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis sed nisl non ullamcorper. Aliquam aliquet urna viverra sapien congue dapibus. Praesent eu nibh sed metus aliquet porttitor. Aliquam aliquet urna viverra sapien congue dapibus. Praesent eu nibh sed metus aliquet porttitor.",
+          "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis sed nisl non ullamcorper. Aliquam aliquet urna viverra sapien congue dapibus. Praesent eu nibh sed metus aliquet porttitor. Aliquam aliquet urna viverra sapien congue dapibus. Praesent eu nibh sed metus aliquet porttitor.",
+          "description3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis sed nisl non ullamcorper. Aliquam aliquet urna viverra sapien congue dapibus. Praesent eu nibh sed metus aliquet porttitor. Aliquam aliquet urna viverra sapien congue dapibus. Praesent eu nibh sed metus aliquet porttitor.",
+          "description4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis sed nisl non ullamcorper. Aliquam aliquet urna viverra sapien congue dapibus. Praesent eu nibh sed metus aliquet porttitor. Aliquam aliquet urna viverra sapien congue dapibus. Praesent eu nibh sed metus aliquet porttitor.",
+          "description5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis sed nisl non ullamcorper. Aliquam aliquet urna viverra sapien congue dapibus. Praesent eu nibh sed metus aliquet porttitor. Aliquam aliquet urna viverra sapien congue dapibus. Praesent eu nibh sed metus aliquet porttitor."
+        }
+      },
       "scheduleSection": {
         "subTitle": "Pakiety idealne dla Ciebie! Oszczędzasz czas i pieniądze",
         "title": "Etapy współpracy",

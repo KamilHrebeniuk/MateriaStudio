@@ -31,13 +31,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left;
+  background-color: var(--darkgray);
+  position: relative;
 }
 
 .tileContainer {
-  background-color: #a1e44d;
   width: 380px;
   height: 380px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-left: 30px;
   position: relative;
 }
@@ -47,13 +48,14 @@
 }
 
 .imageImage {
-  position: absolute;
+  /*position: absolute;*/
 }
 
 .imageCover {
   background-color: transparent;
   width: 100%;
   height: 100%;
+  top: 0;
   position: absolute;
   transition-duration: 0.5s;
   display: flex;
@@ -101,19 +103,117 @@
 .descriptionContainer {
   width: 100%;
   color: var(--white);
-  font-size: var(--font_size_description_24);
-  line-height: 60px;
+  font-size: var(--font_size_subpoint_16);
+  line-height: 30px;
   transition-duration: 0.5s;
+  padding-right: 10px;
 }
 
 .descriptionContainerOpened {
-  height: 300px;
-  margin: 30px 0;
-  background-color: #a1e44d;
+  max-height: 500px;
+  margin: 30px 0 50px;
+  overflow-y: auto;
+}
+
+.descriptionContainer ul {
+  list-style: initial;
+  padding-left: 30px;
 }
 
 .descriptionContainerClosed {
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   margin: 0;
+}
+
+@media only screen and (max-width: 1279px) {
+  .container {
+    padding: 0 60px;
+  }
+
+  .filtersContainer {
+    width: calc(100% + 20px);
+    margin: 0 -10px 10px -10px;
+    flex-wrap: wrap;
+  }
+
+  .filter {
+    margin: 0 10px 20px;
+  }
+
+  .tileContainer {
+    width: calc(33.33% - 20px);
+    height: 0;
+    padding-bottom: calc(33.33% - 20px);
+  }
+
+  .descriptionContainer {
+    font-size: var(--font_size_subpoint_16);
+  }
+
+  .descriptionContainerOpened {
+    margin-top: 0;
+    max-height: 500px;
+  }
+
+  .imageText {
+    width: calc(100% - 40px);
+  }
+
+  .imageArrowContainer {
+    width: 46px;
+    height: 46px;
+    bottom: 20px;
+  }
+
+  .imageArrowContainer > img {
+    width: 20px;
+  }
+
+  .imageCover {
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .filtersContainer {
+  }
+
+  .contentRow {
+    justify-content: center;
+  }
+
+  .tileContainer {
+    width: calc(50% - 10px);
+    height: 0;
+    padding-bottom: calc(50% - 10px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .descriptionContainerOpened {
+    max-height: 800px;
+  }
+
+  .imageText {
+    font-size: var(--font_size_subpoint_16);
+  }
+
+  .imageArrowContainer {
+    width: 32px;
+    height: 32px;
+    bottom: 20px;
+  }
+
+  .imageArrowContainer > img {
+    width: 16px;
+  }
+
+  .imageCover {
+    padding-bottom: 40px;
+  }
 }

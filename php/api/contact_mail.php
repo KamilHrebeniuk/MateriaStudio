@@ -16,14 +16,14 @@ function send_contact_mail_materia($name, $phone): bool
             </tr>
         </table>';
 
-    $headers  = "From:  <kontakt@omindu.pl>\n";
+    $headers  = "From:  <kontakt@materiastudio.design>\n";
     $headers .= "FromName: Kontakt MateriaStudio\n";
     $headers .= "X-Sender: MateriaStudio.design <kontakt@materiastudio.design>\n";
     $headers .= 'X-Mailer: PHP/' . phpversion();
     $headers .= "X-Priority: 2\n";
     $headers .= "Importance: High\n";
     $headers .= "X-MSMail-Priority: High\n";
-    $headers .= "Return-Path: kontakt@omindu.pl\n";
+    $headers .= "Return-Path: kontakt@materiastudio.design\n";
     $headers .= "MIME-Version: 1.0\n";
     $headers .= "Priority: Urgent\n";
 

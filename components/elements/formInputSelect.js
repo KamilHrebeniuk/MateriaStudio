@@ -11,6 +11,7 @@ export default function FormInputSelect({
   placeholderId,
   optionsIds,
   isRequired,
+  eventHandler,
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [value, setValue] = useState("");
@@ -25,7 +26,6 @@ export default function FormInputSelect({
 
   const translatedOptions = [];
   optionsIds.forEach((optionId) => translatedOptions.push(__(optionId)));
-  console.log(value);
 
   return (
     <div className={styles.elementContainer}>
@@ -51,6 +51,7 @@ export default function FormInputSelect({
               key={i}
               className={styles.optionsOption}
               onClick={() => {
+                eventHandler(translation);
                 setValue(translation);
                 setIsOpen(false);
               }}
@@ -70,4 +71,5 @@ FormInputSelect.propTypes = {
   placeholderId: PropTypes.string.isRequired,
   isRequired: PropTypes.bool.isRequired,
   optionsIds: PropTypes.array,
+  eventHandler: PropTypes.func.isRequired,
 };

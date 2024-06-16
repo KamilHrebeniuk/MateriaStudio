@@ -2,6 +2,10 @@
   width: calc(25% - 20px);
 }
 
+.graphicsPointerEventsBlocker {
+  pointer-events: none;
+}
+
 .graphicsLink {
   /*height: 280px;*/
   text-align: center;

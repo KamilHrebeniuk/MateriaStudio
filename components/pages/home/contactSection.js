@@ -7,27 +7,29 @@ import __ from "/utils/lang/translate";
 import { useContext, useState } from "react";
 import AppContext from "/context/AppContext";
 import Button from "/components/elements/button";
+import ContactButton from "../../elements/contactButton";
+import Image from "next/image";
+import Logo_image from "/public/pages/universal/icons/Logo.svg";
+import Phone_icon from "../../../public/pages/universal/icons/Phone.svg";
+import Mail_icon from "../../../public/pages/universal/icons/Mail.svg";
 
 export default function ContactSection() {
-  const [name, setName] = useState();
-  const [phone, setPhone] = useState();
-  const [offerAgreement, setOfferAgreement] = useState();
-  const [rulesAgreement, setRulesAgreement] = useState();
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [type, setType] = useState("");
+  const [rulesAgreement, setRulesAgreement] = useState(false);
   const appContext = useContext(AppContext);
 
   const submitContact = (event) => {
     event.preventDefault();
 
-    setOfferAgreement("on");
-    setRulesAgreement("on");
-
-    fetch("http://qfgcdwu.cluster027.hosting.ovh.net/api/contact.php", {
+    fetch("//materiastudio.design/api/contact.php", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         name: name,
         phone: phone,
-        offer_agreement: offerAgreement,
+        type: type,
         rules_agreement: rulesAgreement,
         token: appContext.token,
       }),
@@ -101,29 +103,20 @@ export default function ContactSection() {
                 "pages.universal.form.options.topic.5",
               ]}
               isRequired={true}
+              eventHandler={setType}
             />
-            {/*<FormInputSelect*/}
-            {/*  elementName={"variant"}*/}
-            {/*  labelId={"pages.universal.form.label.variant"}*/}
-            {/*  placeholderId={"pages.universal.form.placeholder.variant"}*/}
-            {/*  optionsIds={[*/}
-            {/*    "pages.universal.form.options.variant.1",*/}
-            {/*    "pages.universal.form.options.variant.2",*/}
-            {/*    "pages.universal.form.options.variant.3",*/}
-            {/*  ]}*/}
-            {/*  isRequired={true}*/}
-            {/*/>*/}
             <FormInputCheckbox
               elementName={"agreement"}
               labelId={"pages.universal.form.label.agreement"}
               isRequired={true}
+              eventHandler={setRulesAgreement}
             />
             <div className={styles.contactFormSubmit}>
               <Button
-                textId={"pages.universal.form.inputSubmit"}
+                textId={"Połączmy kropki!"}
                 url={"#"}
-                styleType={"purpleAccent"}
-                type={"small"}
+                type={"purpleAccent"}
+                size={"small"}
                 isSubmit
               />
             </div>
@@ -132,7 +125,56 @@ export default function ContactSection() {
             {/*</button>*/}
           </form>
         </div>
-        <div className={styles.contactContactContainer}></div>
+        <div className={styles.contactContactContainer}>
+          <div className={styles.contactContactSection1}>
+            <Image src={Logo_image} alt={""} />
+            <span className={styles.contactContactDescription}>
+              {__(
+                "Zadzwoń lub napisz, chętnie odpowiem na wszystkie Twoje pytania."
+              )}
+            </span>
+            <div className={styles.contactContactInnerContainer}>
+              <a
+                href="tel:+48 536 333 658"
+                className={styles.contactContactLinkContainer}
+              >
+                <Image
+                  src={Phone_icon}
+                  alt={"Tel:"}
+                  className={styles.contactContactIcon}
+                />
+                +48 536 333 658
+              </a>
+              <a
+                href="mailto:kontakt@materiastudio.design"
+                className={styles.contactContactLinkContainer}
+              >
+                <Image
+                  src={Mail_icon}
+                  alt={"Tel:"}
+                  className={styles.contactContactIcon}
+                />
+                kontakt@materiastudio.design
+              </a>
+            </div>
+          </div>
+          <div className={styles.contactContactSection2}>
+            <StandardHeader
+              subTitle={"Masz pytania?"}
+              title={"Porozmawiajmy!"}
+            />
+            <div className={styles.contactContactButtonsContainer}>
+              <ContactButton
+                url={"#"}
+                textId={"pages.home.quickContactSection.button1"}
+              />
+              <ContactButton
+                url={"#"}
+                textId={"pages.home.quickContactSection.button2"}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

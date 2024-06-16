@@ -11,8 +11,15 @@ import Twitter_icon from "../../../public/pages/universal/icons/Twitter.png";
 import Link from "next/link";
 import __ from "/utils/lang/translate";
 import url from "../../../utils/routing/url";
+import delayedClick from "../../../utils/routing/delayRedirect";
+import { useContext } from "react";
+import AppContext from "/context/AppContext";
+import { useRouter } from "next/router";
 
 export default function FooterSection() {
+  const context = useContext(AppContext);
+  const router = useRouter();
+
   return (
     <footer
       className={styles.container}
@@ -54,16 +61,32 @@ export default function FooterSection() {
           <h4 className={styles.sectionHeaders}>
             {__("pages.universal.pagesTitle")}
           </h4>
-          <Link className={styles.sectionContent} href={url.homePage}>
+          <Link
+            className={styles.sectionContent}
+            href={url.homePage}
+            onClick={(event) => delayedClick(context, router, event)}
+          >
             {__("pages.universal.homepage")}
           </Link>
-          <Link className={styles.sectionContent} href={url.portfolioPage}>
+          <Link
+            className={styles.sectionContent}
+            href={url.portfolioPage}
+            onClick={(event) => delayedClick(context, router, event)}
+          >
             {__("pages.universal.portfolio")}
           </Link>
-          <Link className={styles.sectionContent} href={url.offerPage}>
+          <Link
+            className={styles.sectionContent}
+            href={url.offerPage}
+            onClick={(event) => delayedClick(context, router, event)}
+          >
             {__("pages.universal.offer")}
           </Link>
-          <Link className={styles.sectionContent} href={url.contactPage}>
+          <Link
+            className={styles.sectionContent}
+            href={url.contactPage}
+            onClick={(event) => delayedClick(context, router, event)}
+          >
             {__("pages.universal.contact")}
           </Link>
           {/*<Link className={styles.sectionContent} href={url.blogPage}>*/}

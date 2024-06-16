@@ -5,6 +5,9 @@ body {
   font-family: "basic-sans", sans-serif;
   letter-spacing: 0.01em;
   scroll-behavior: smooth;
+  color: var(--white);
+  overflow-x: hidden;
+  background-color: var(--darkgray);
 }
 
 a {

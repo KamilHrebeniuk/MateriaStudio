@@ -1,0 +1,147 @@
+.container {
+  width: 100%;
+  padding: 0 0 100px;
+}
+
+.contentContainer {
+  width: 1240px;
+  margin: auto;
+}
+
+.sliderStaticContainer {
+  position: relative;
+  left: -15px;
+  width: 1270px;
+}
+
+.sliderTileContainer {
+  padding: 0 15px;
+}
+
+.sliderTile {
+  border-radius: 20px;
+  padding: 30px;
+  border: solid 3px var(--white);
+}
+
+.authorContainer {
+  display: flex;
+  align-content: center;
+}
+
+.sliderTileImage {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.authorContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.authorName {
+  color: var(--white);
+  font-weight: var(--font_weight_bold);
+  font-size: var(--font_size_description_24);
+  margin-bottom: 10px;
+}
+
+.sliderStars {
+  display: flex;
+}
+
+.sliderStar {
+  margin-right: 10px;
+}
+
+.sliderTileDescription {
+  margin-top: 20px;
+  height: 152px;
+  line-height: 19px;
+  overflow: hidden;
+}
+
+.dots {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.dots li button {
+  background-color: var(--purple_accent);
+  border: solid 1px var(--purple_accent);
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 0;
+}
+
+.dots li button:hover {
+  border: solid 1px var(--white);
+}
+
+.dots :global(.slick-active) button {
+  border: solid 1px var(--white);
+}
+
+@media only screen and (max-width: 1279px) {
+  .container {
+    width: 100%;
+    padding: 0 0 40px;
+    border-radius: 20px;
+  }
+
+  .contentContainer {
+    width: calc(100% - 80px);
+    max-width: 944px;
+    margin: auto;
+  }
+
+  .sliderStaticContainer {
+    position: relative;
+    left: -15px;
+    width: calc(100% + 30px);
+    max-width: 974px;
+  }
+
+  .sliderTile {
+    padding: 20px;
+  }
+
+  .sliderTileImage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .authorName {
+    margin-bottom: 6px;
+  }
+
+  .authorRole {
+    font-size: var(--font_size_subpoint_16);
+  }
+
+  .sliderTileDescription {
+    margin-top: 15px;
+    font-size: var(--font_size_subpoint_16);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .contentContainer {
+    width: calc(100% - 60px);
+    margin: auto;
+  }
+}

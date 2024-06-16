@@ -1,24 +1,20 @@
 import styles from "../../styles/pages/portfolio/projectsSection.module.css";
 import Image from "next/image";
-import portfolio1 from "../../public/pages/portfolio/portfolio1.png";
 import arrow from "../../public/pages/portfolio/icons/arrow.svg";
 import { useRouter } from "next/router";
 import PropTypes from "prop-types";
-import { useEffect, useMemo, useState } from "react";
-import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
+import __ from "../../utils/lang/translate";
+import url from "/utils/routing/url";
 
 export default function ExpandableTilesRow({ projects }) {
   const [description, setDescription] = useState("");
-  const [descriptionOpened, setDescriptionOpened] = useState(false);
+  const [descriptionOpened, setDescriptionOpened] = useState(-1);
   const router = useRouter();
-  const ReactQuill = useMemo(
-    () => dynamic(() => import("react-quill"), { ssr: false }),
-    []
-  );
 
   useEffect(() => {
     setDescription("");
-    setDescriptionOpened(false);
+    setDescriptionOpened(-1);
   }, [router.query["filter"]]);
 
   return (
@@ -29,10 +25,10 @@ export default function ExpandableTilesRow({ projects }) {
             className={styles.tileContainer}
             key={i}
             onClick={() => {
-              if (descriptionOpened) {
-                setDescriptionOpened(false);
+              if (descriptionOpened === i) {
+                setDescriptionOpened(-1);
               } else {
-                setDescriptionOpened(true);
+                setDescriptionOpened(i);
                 setDescription(project.Description);
               }
 
@@ -47,7 +43,11 @@ export default function ExpandableTilesRow({ projects }) {
               router.push(path, undefined, { shallow: true });
             }}
           >
-            <Image src={portfolio1} alt={"#"} className={styles.imageImage} />
+            <img
+              src={url.baseURL + "/images/" + project.ImageID}
+              alt={"#"}
+              className={styles.imageImage}
+            />
             <div className={styles.imageCover}>
               <span className={styles.imageText}>{project.Name}</span>
               <span className={styles.imageArrowContainer}>
@@ -59,12 +59,16 @@ export default function ExpandableTilesRow({ projects }) {
       })}
       <div
         className={
-          descriptionOpened
+          descriptionOpened !== -1
             ? `${styles.descriptionContainer} ${styles.descriptionContainerOpened}`
             : `${styles.descriptionContainer} ${styles.descriptionContainerClosed}`
         }
       >
-        <ReactQuill value={description} readOnly={true} theme={"bubble"} />
+        <span
+          dangerouslySetInnerHTML={{
+            __html: __(description),
+          }}
+        ></span>
       </div>
     </div>
   );

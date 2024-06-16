@@ -99,6 +99,14 @@
     right: 0;
   }
 
+  .contentLeft div:first-of-type {
+    max-width: calc(100% - 120px);
+  }
+
+  .contentLeft h2 {
+    height: 62px;
+  }
+
   .descriptionContainer {
     width: 100%;
   }
